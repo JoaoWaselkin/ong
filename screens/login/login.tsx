@@ -1,11 +1,44 @@
-import { Text, View } from "react-native"
+import { useState } from 'react'
+import { router } from 'expo-router'
+import { Text, View, TouchableOpacity, TextInput, Image} from "react-native"
+import { styles,  } from './style'
+
+
+const Logo = require('../../assets/images/dog.png');
 
 export const Login = () => {
-    return (
-        <View>
-            <Text>Fala ai zika</Text>   
+    const [texto, setTexto] = useState('');
+    const [senha, setSenha] = useState('');
 
+    return (
+        <View style={styles.outerContainer}>
+            <View style={styles.container}>
+                <Image source={Logo} style={styles.logo}/>
+                <Text style={styles.subtitle}>Ajude animais de rua a encontrar um novo lar!</Text>  
+
+                <Text style={styles.title}>Login</Text>  
+
+                <TextInput
+                style={styles.input}
+                onChangeText={setTexto}
+                value={texto}
+                placeholder="@seuUsuario"
+                placeholderTextColor="#999" />
+
+                <TextInput
+                style={styles.input}
+                onChangeText={setSenha}
+                value={senha}
+                placeholder="*********"
+                placeholderTextColor="#999"
+                secureTextEntry={true}/>  
+
+                <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>Fazer Login</Text>
+                </TouchableOpacity>
+            </View>
         </View>
+
 
     )
 } 

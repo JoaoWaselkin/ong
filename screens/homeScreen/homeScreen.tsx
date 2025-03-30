@@ -1,4 +1,4 @@
-import { Image, View, Text, Button } from 'react-native';
+import { Image, View, Text, Button, TouchableOpacity } from 'react-native';
 import { stylesHomeScreen } from './style'
 import { router } from 'expo-router';
  
@@ -10,7 +10,9 @@ export const HomeScreen = () => {
       <Image source={Logo} style={stylesHomeScreen.logo}/>
       <Text style={stylesHomeScreen.title}>Ajude um animal</Text>
       <Text style={stylesHomeScreen.subtitle}>Encontre um novo melhor amigo para alegrar seus dias!</Text>
-      <Button title='Faça login' onPress={() => router.navigate('/../screens/login/login')} />
+      <TouchableOpacity onPress={() => router.push('/../screens/login/login')}>
+        <Text>Faça Login</Text>
+      </TouchableOpacity>
 
     </View>
 
