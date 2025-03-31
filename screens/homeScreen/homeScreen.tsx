@@ -10,11 +10,11 @@ export const HomeScreen = () => {
       <Image source={Logo} style={stylesHomeScreen.logo}/>
       <Text style={stylesHomeScreen.title}>Ajude um animal</Text>
       <Text style={stylesHomeScreen.subtitle}>Encontre um novo melhor amigo para alegrar seus dias!</Text>
-      <TouchableOpacity onPress={() => router.push('/../screens/login/login')}>
+      <TouchableOpacity onPress={() => router.navigate('../../screens/login/login')}>
         <Text>Faça Login</Text>
       </TouchableOpacity>
 
-    </View>
+    </View> 
 
 
   );    

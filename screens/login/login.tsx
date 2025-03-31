@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { router } from 'expo-router'
 import { Text, View, TouchableOpacity, TextInput, Image} from "react-native"
-import { styles,  } from './style'
+import { styles  } from './style'
 
 
 const Logo = require('../../assets/images/dog.png');
