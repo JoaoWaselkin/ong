@@ -15,7 +15,6 @@ export const Login = () => {
             <View style={styles.container}>
                 <Image source={Logo} style={styles.logo}/>
                 <Text style={styles.subtitle}>Ajude animais de rua a encontrar um novo lar!</Text>  
-
                 <Text style={styles.title}>Login</Text>  
 
                 <TextInput
@@ -23,7 +22,8 @@ export const Login = () => {
                 onChangeText={setTexto}
                 value={texto}
                 placeholder="@seuUsuario"
-                placeholderTextColor="#999" />
+                placeholderTextColor="#999"
+                />
 
                 <TextInput
                 style={styles.input}
@@ -31,13 +31,25 @@ export const Login = () => {
                 value={senha}
                 placeholder="*********"
                 placeholderTextColor="#999"
-                secureTextEntry={true}/>  
+                secureTextEntry={true}
+                /> 
 
+                
+                <View style={styles.containerButtons}>
+                <TouchableOpacity style={styles.infoButton}>
+                    <Text style={styles.secondaryButtonText}>Criar conta</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={styles.infoButton}>
+                    <Text style={styles.secondaryButtonText}>Esqueci minha senha</Text>
+                </TouchableOpacity>
+                </View>
+                
                 <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonText}>Fazer Login</Text>
                 </TouchableOpacity>
             </View>
-        </View>
+</View>
 
 
     )

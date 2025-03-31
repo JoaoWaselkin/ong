@@ -19,20 +19,19 @@ export const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-  
   },
   logo: {
     width: 120,
-    height: 120
+    height: 120,
+    marginBottom: 10
   },
-
-  subtitle:{
+  subtitle: {
     fontSize: 17,
     color: '#FFB8E0',
     fontWeight: 'bold',
-    paddingBottom: 30
+    paddingBottom: 30,
+    textAlign: 'center'
   },
-
   title: {
     fontSize: 30,
     fontWeight: 'bold',
@@ -44,8 +43,23 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: 20,
     padding: 12,
-    width: '25%',
+    width: '55%',
     alignItems: 'center'
+  },
+  containerButtons: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '55%',
+
+  },
+  infoButton: {
+    padding: 8
+  },
+  secondaryButtonText: {
+    fontSize: 14,
+    color: '#BE5985',
+    fontWeight: 'bold',
+
   },
   buttonText: {
     fontSize: 16,
