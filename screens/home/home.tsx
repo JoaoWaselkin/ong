@@ -13,7 +13,7 @@ const dogs = [
 export const Home = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Cachorros para Adoção</Text>
+            <Text style={styles.title}> Encontre seu Melhor Amigo de Quatro Patas! </Text>
             <FlatList
                 data={dogs}
                 keyExtractor={(item) => item.id}

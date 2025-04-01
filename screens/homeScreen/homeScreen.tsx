@@ -1,7 +1,7 @@
 import { Image, View, Text, Button, TouchableOpacity } from 'react-native';
 import { stylesHomeScreen } from './style'
 import { router } from 'expo-router';
- 
+
 const Logo = require('../../assets/images/dog.png');
 
 export const HomeScreen = () => {

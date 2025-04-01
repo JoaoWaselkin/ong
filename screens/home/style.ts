@@ -2,9 +2,10 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1,
         backgroundColor: '#d17b9f',
         padding: 20,
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     title: {
         fontSize: 24,
@@ -14,11 +15,14 @@ export const styles = StyleSheet.create({
         marginBottom: 20,
     },
     card: {
+        width: 350,
+        height: 150,
+        justifyContent: 'center',
+        alignItems: 'center',
         backgroundColor: '#fff',
         borderRadius: 10,
         padding: 15,
         marginBottom: 15,
-        alignItems: 'center',
         shadowColor: '#000',
         shadowOpacity: 0.2,
         shadowRadius: 4,
@@ -32,6 +36,5 @@ export const styles = StyleSheet.create({
     name: {
         fontSize: 18,
         fontWeight: 'bold',
-        marginTop: 10,
     },
 });
