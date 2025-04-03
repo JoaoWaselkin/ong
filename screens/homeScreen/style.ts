@@ -1,24 +1,23 @@
 import { StyleSheet } from 'react-native'
 
 export const stylesHomeScreen = StyleSheet.create({
-    titleContainer: {
+    Container: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
+      backgroundColor: '#FFEDFA',
     },
-    title: {
-      fontSize: 20,
-      fontWeight: 'bold',
-      marginTop: 25
-    },
-    subtitle: {
-      fontSize: 16,
-      marginTop: 5 
-    },
+
     logo: {
       width: 200,
       height: 200,
       resizeMode: 'contain',
-      
     },
+
+    textoLogin:{
+      marginTop: 80,
+      fontSize: 15,
+      fontWeight: 'bold',
+      color: '#EC7FA9',
+    }
   });

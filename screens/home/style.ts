@@ -2,16 +2,18 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#d17b9f',
-        padding: 20,
+        flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: '#FFEDFA',
+        padding: 20,
     },
+
     title: {
-        fontSize: 24,
+        fontSize: 20,
         fontWeight: 'bold',
         textAlign: 'center',
-        color: '#fff',
+        color: '#EC7FA9',
         marginBottom: 20,
     },
     card: {
@@ -34,7 +36,8 @@ export const styles = StyleSheet.create({
         borderRadius: 50,
     },
     name: {
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: 'bold',
+        color: '#EC7FA9'
     },
 });

@@ -6,12 +6,10 @@ const Logo = require('../../assets/images/dog.png');
 
 export const HomeScreen = () => {
   return (
-    <View style={stylesHomeScreen.titleContainer} >
+    <View style={stylesHomeScreen.Container} >
       <Image source={Logo} style={stylesHomeScreen.logo}/>
-      <Text style={stylesHomeScreen.title}>Ajude um animal</Text>
-      <Text style={stylesHomeScreen.subtitle}>Encontre um novo melhor amigo para alegrar seus dias!</Text>
       <TouchableOpacity onPress={() => router.navigate('../../screens/login/login')}>
-        <Text>Faça Login</Text>
+        <Text style={stylesHomeScreen.textoLogin} >Login</Text>
       </TouchableOpacity>
 
     </View> 

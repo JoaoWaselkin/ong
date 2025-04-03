@@ -5,51 +5,55 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#BE5985'
+    // backgroundColor: '#BE5985'
   },
   container: {
-    height: '60%',
-    width: '35%',
+    height: '100%',
+    width: '100%',
     minHeight: 350,
     backgroundColor: '#FFEDFA',
-    borderRadius: 10,
     padding: 20,
     justifyContent: 'center',
     alignItems: 'center',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
+    // borderRadius: 10,
   },
   logo: {
-    width: 120,
-    height: 120,
-    marginBottom: 10
+    width: 150,
+    height: 150,
+    marginBottom: 20
   },
   subtitle: {
-    fontSize: 17,
-    color: '#FFB8E0',
-    fontWeight: 'bold',
-    paddingBottom: 30,
-    textAlign: 'center'
+    fontSize: 14,
+    // color: '#FFB8E0',
+    color: '#EC7FA9',
+    fontWeight: 'medium',
+    paddingBottom: 15,
+    textAlign: 'center',
   },
   title: {
-    fontSize: 30,
-    fontWeight: 'bold',
+    fontSize: 24,
+    fontWeight: 'medium',
     marginBottom: 30,
-    color: '#FFB8E0' 
+    color: '#EC7FA9' 
+    // color: '#FFDA76',
   },
   button: {
-    backgroundColor: '#b5b5b5',
-    borderRadius: 10,
+    backgroundColor: '#EC7FA9',
+    borderRadius: 20,
     marginTop: 20,
-    padding: 12,
-    width: '55%',
+    padding: 10,
+    width: '85%',
     alignItems: 'center'
   },
   containerButtons: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: '55%',
+    padding: 10,
+    gap: 20,
+    // width: '60%',
 
   },
   infoButton: {
@@ -58,7 +62,7 @@ export const styles = StyleSheet.create({
   secondaryButtonText: {
     fontSize: 14,
     color: '#BE5985',
-    fontWeight: 'bold',
+    fontWeight: 'medium',
 
   },
   buttonText: {
@@ -67,14 +71,15 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   input: {
-    width: '55%',
-    height: 45,
-    borderColor: '#555',
+    width: '85%',
+    height: 40,
+    borderColor: '#EC7FA9',
     borderWidth: 1,
-    borderRadius: 5,
-    paddingHorizontal: 15,
-    marginBottom: 15,
-    backgroundColor: '#222',
-    color: 'white'
+    borderRadius:20,
+    textAlign: 'center',
+    marginBottom: 20,
+    backgroundColor: '#FFF',
+    // color: 'white'
+    // paddingHorizontal: 15,
   }
 })
