@@ -23,10 +23,10 @@ export const styles = StyleSheet.create({
   logo: {
     width: 150,
     height: 150,
-    marginBottom: 20
+    marginTop: 20
   },
   subtitle: {
-    fontSize: 14,
+    fontSize: 16,
     // color: '#FFB8E0',
     color: '#EC7FA9',
     fontWeight: 'medium',
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'medium',
     marginBottom: 30,
     color: '#EC7FA9' 

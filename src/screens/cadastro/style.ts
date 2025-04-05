@@ -23,18 +23,17 @@ export const styles = StyleSheet.create({
   logo: {
     width: 150,
     height: 150,
-    marginBottom: 20
+    marginTop: 30
   },
   subtitle: {
-    fontSize: 14,
-    // color: '#FFB8E0',
+    fontSize: 20,
     color: '#EC7FA9',
-    fontWeight: 'medium',
-    paddingBottom: 15,
+    fontWeight: 'bold',
     textAlign: 'center',
+    marginBottom: 35,
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'medium',
     marginBottom: 30,
     color: '#EC7FA9' 

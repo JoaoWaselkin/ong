@@ -15,7 +15,7 @@ export const Cadastro = () => {
         <View style={styles.outerContainer}>
             <View style={styles.container}>
 
-                <Text style={styles.subtitle}>Ajude animais de rua a encontrar um novo lar!</Text>  
+                <Text style={styles.subtitle}> Seu cadastro é o primeiro passo para um futuro melhor, dê uma chance para quem não tem voz </Text>  
                 <Text style={styles.title}>Cadastre-se</Text>  
 
                 <TextInput
