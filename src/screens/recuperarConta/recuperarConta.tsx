@@ -4,7 +4,7 @@ import { Text, View, TouchableOpacity, TextInput, Image} from "react-native"
 import { styles } from './style'
 
 
-const Logo = require('../../../assets/images/dog.png');
+const Logo = require('../../../assets/images/dog2.png');
 
 export const RecuperarConta = () => {
     const [email, setEmail] = useState('');
@@ -14,6 +14,7 @@ export const RecuperarConta = () => {
             <View style={styles.container}>
 
                 <Text style={styles.subtitle}>Problemas para acessar sua conta?</Text>  
+                <Image source={Logo} style={styles.logo}/>
                 <Text style={styles.title}>Recupere aqui!</Text>  
 
                 <TextInput
@@ -23,8 +24,6 @@ export const RecuperarConta = () => {
                 placeholder="seu@email.com"
                 placeholderTextColor="#999"
                 />
-
-                <Image source={Logo} style={styles.logo}/>
                 
                 <View style={styles.containerButtons}>
                 <TouchableOpacity style={styles.infoButton}>
