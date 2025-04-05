@@ -6,22 +6,31 @@ import { styles } from './style'
 
 const Logo = require('../../../assets/images/dog.png');
 
-export const Login = () => {
+export const Cadastro = () => {
     const [texto, setUsuario] = useState('');
+    const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
 
     return (
         <View style={styles.outerContainer}>
             <View style={styles.container}>
-                <Image source={Logo} style={styles.logo}/>
+
                 <Text style={styles.subtitle}>Ajude animais de rua a encontrar um novo lar!</Text>  
-                <Text style={styles.title}>Login</Text>  
+                <Text style={styles.title}>Cadastre-se</Text>  
 
                 <TextInput
                 style={styles.input}
                 onChangeText={setUsuario}
                 value={texto}
                 placeholder="@seuUsuario"
+                placeholderTextColor="#999"
+                />
+
+                <TextInput
+                style={styles.input}
+                onChangeText={setEmail}
+                value={email}
+                placeholder="examplo@email.com"
                 placeholderTextColor="#999"
                 />
 
@@ -34,20 +43,13 @@ export const Login = () => {
                 secureTextEntry={true}
                 /> 
 
+                <Image source={Logo} style={styles.logo}/>
                 
                 <View style={styles.containerButtons}>
-                <TouchableOpacity style={styles.infoButton} onPress={() => router.navigate('/stacks/cadastro')}>
+                <TouchableOpacity style={styles.infoButton}>
                     <Text style={styles.secondaryButtonText}>Criar conta</Text>
                 </TouchableOpacity>
-
-                <TouchableOpacity style={styles.infoButton}>
-                    <Text style={styles.secondaryButtonText}>Esqueci minha senha</Text>
-                </TouchableOpacity>
                 </View>
-                
-                <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>Login</Text>
-                </TouchableOpacity>
             </View>
 </View>
 
