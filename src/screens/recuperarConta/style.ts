@@ -5,7 +5,6 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    // backgroundColor: '#BE5985'
   },
   container: {
     height: '100%',
@@ -18,16 +17,14 @@ export const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-    // borderRadius: 10,
   },
   logo: {
     width: 150,
     height: 150,
-    marginTop: 20
+    marginBottom: 50
   },
   subtitle: {
     fontSize: 16,
-    // color: '#FFB8E0',
     color: '#EC7FA9',
     fontWeight: 'medium',
     paddingBottom: 15,
@@ -38,7 +35,6 @@ export const styles = StyleSheet.create({
     fontWeight: 'medium',
     marginBottom: 30,
     color: '#EC7FA9' 
-    // color: '#FFDA76',
   },
   button: {
     backgroundColor: '#EC7FA9',
@@ -53,7 +49,6 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     padding: 10,
     gap: 20,
-    // width: '60%',
 
   },
   infoButton: {
@@ -79,7 +74,5 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 20,
     backgroundColor: '#FFF',
-    // color: 'white'
-    // paddingHorizontal: 15,
   }
 })
