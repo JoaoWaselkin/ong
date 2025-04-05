@@ -40,7 +40,7 @@ export const Login = () => {
                     <Text style={styles.secondaryButtonText}>Criar conta</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.infoButton}>
+                <TouchableOpacity style={styles.infoButton} onPress={() => router.navigate('/stacks/recuperarConta')}>
                     <Text style={styles.secondaryButtonText}>Esqueci minha senha</Text>
                 </TouchableOpacity>
                 </View>
