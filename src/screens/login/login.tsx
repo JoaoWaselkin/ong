@@ -4,7 +4,7 @@ import { Text, View, TouchableOpacity, TextInput, Image} from "react-native"
 import { styles  } from './style'
 
 
-const Logo = require('../../assets/images/dog.png');
+const Logo = require('../../../assets/images/dog.png');
 
 export const Login = () => {
     const [texto, setTexto] = useState('');

@@ -31,6 +31,7 @@ export default function RootLayout() {
     <ThemeProvider value={DefaultTheme}>
       <Stack>
         <Stack.Screen name="index" />
+        <Stack.Screen name="(stacks)" />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
