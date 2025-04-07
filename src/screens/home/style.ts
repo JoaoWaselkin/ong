@@ -19,6 +19,7 @@ export const styles = StyleSheet.create({
     card: {
         width: 350,
         height: 150,
+        flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#fff',
@@ -31,13 +32,18 @@ export const styles = StyleSheet.create({
         elevation: 3,
     },
     image: {
-        width: 100,
-        height: 100,
+        width: 125,
+        height: 125,
         borderRadius: 50,
     },
     name: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#EC7FA9'
+        color: '#EC7FA9',
+        marginLeft: 50
+        
     },
+    listCard:{
+        flexDirection: 'row'
+    }
 });
