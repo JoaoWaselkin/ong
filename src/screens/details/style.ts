@@ -14,7 +14,6 @@ export const styles = StyleSheet.create({
         height: 250,
         borderRadius: 10,
         margin: 15,
-        marginLeft: 70
     },
 
     titulo: {
@@ -31,7 +30,6 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#EC7FA9',
         margin: 5,
-        marginLeft: 97
     },
     descricao: {
         fontSize: 14,
@@ -40,11 +38,12 @@ export const styles = StyleSheet.create({
         padding: 10
     },
 
-    caracteristicas: {
-        fontSize: 14,
-        textAlign: 'justify',
-        color: '#000',
+
+    caracteristicasAnimal:{
         padding: 10,
-        maxHeight: 200
+        marginLeft: 20,
+        color: '#EC7FA9',
+        fontWeight: 'medium',
+        fontSize: 16,
     }
 });
