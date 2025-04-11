@@ -25,14 +25,14 @@ export const styles = StyleSheet.create({
     height: 150,
     marginTop: 30
   },
-  subtitle: {
+  title: {
     fontSize: 20,
     color: '#EC7FA9',
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 35,
   },
-  title: {
+  subtitle: {
     fontSize: 20,
     fontWeight: 'medium',
     marginBottom: 30,

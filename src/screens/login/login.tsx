@@ -21,7 +21,7 @@ export const Login = () => {
                 style={styles.input}
                 onChangeText={setUsuario}
                 value={texto}
-                placeholder="@seuUsuario"
+                placeholder="seu@email.com"
                 placeholderTextColor="#999"
                 />
 

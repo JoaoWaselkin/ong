@@ -5,24 +5,46 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#FFEDFA',
         alignItems: 'center',
-        justifyContent: 'center',
-        padding: 20,
+        justifyContent: 'flex-start',
     },
+
+
     image: {
-        width: 300,
-        height: 300,
-        borderRadius: 50,
-        marginBottom: 20,
+        width: 250,
+        height: 250,
+        borderRadius: 10,
+        margin: 15,
+        marginLeft: 70
     },
+
+    titulo: {
+        color: '#EC7FA9',
+        margin: 25,
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10
+    },
+
     name: {
-        fontSize: 24,
+        fontSize: 19,
         fontWeight: 'bold',
         color: '#EC7FA9',
-        marginBottom: 10,
+        margin: 5,
+        marginLeft: 97
     },
     descricao: {
-        fontSize: 16,
+        fontSize: 14,
         textAlign: 'center',
-        color: '#333',
+        color: '#000',
+        padding: 10
     },
+
+    caracteristicas: {
+        fontSize: 14,
+        textAlign: 'justify',
+        color: '#000',
+        padding: 10,
+        maxHeight: 200
+    }
 });

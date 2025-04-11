@@ -17,33 +17,49 @@ export const styles = StyleSheet.create({
         marginBottom: 20,
     },
     card: {
-        width: 350,
-        height: 150,
-        flexDirection: 'row',
+        width: 250,
+        height: 250,
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#fff',
-        borderRadius: 10,
+        backgroundColor: '#FED2E2',
+        borderRadius: 8,
+        borderColor:'#EC7FA9',
         padding: 15,
-        marginBottom: 15,
-        shadowColor: '#000',
+        margin: 25,
+        shadowColor: '#EC7FA9',
         shadowOpacity: 0.2,
         shadowRadius: 4,
         elevation: 3,
     },
     image: {
-        width: 125,
-        height: 125,
-        borderRadius: 50,
+        width: 210,
+        height: 210,
+        borderRadius: 25,
     },
     name: {
-        fontSize: 16,
+        fontSize: 15,
         fontWeight: 'bold',
-        color: '#EC7FA9',
-        marginLeft: 50
-        
+        color: '#fff',
+        marginTop: 5
     },
     listCard:{
         flexDirection: 'row'
+    },
+
+    cardBotao:{
+        height: 40,
+        width: 125,
+        backgroundColor: '#EC7FA9',
+        borderRadius: 25,
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: 5
+    },
+
+    saibaMais:{
+        fontSize: 15,
+        fontWeight: 'medium',
+        color: '#fff',
     }
 });
