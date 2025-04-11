@@ -37,11 +37,14 @@ export const styles = StyleSheet.create({
         color: '#000',
         padding: 10
     },
+    
+    caracteristicas:{
+        marginRight: 150
+    },
 
 
     caracteristicasAnimal:{
         padding: 10,
-        marginLeft: 20,
         color: '#EC7FA9',
         fontWeight: 'medium',
         fontSize: 16,
