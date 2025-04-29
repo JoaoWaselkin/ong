@@ -48,6 +48,10 @@ export const Login = () => {
                 <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity>
+
+                <TouchableOpacity onPress={() => router.navigate('/stacks/reconhecimento')} style={styles.button}>
+                <Text style={styles.buttonText}>Entrar Com FaceID</Text>
+                </TouchableOpacity>
             </View>
 </View>
 
