@@ -17,14 +17,14 @@ interface Animal {
 }
 
 export default function Details() {
-  const { id } = useLocalSearchParams(); // Assume que a URL ou navegação envia um id
+  const { id } = useLocalSearchParams();
   const [animal, setAnimal] = useState<Animal | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchAnimal = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:8080/cachorro/buscar/${id}`); // substitua pela sua URL real
+        const response = await fetch(`http://127.0.0.1:8080/cachorro/buscar/${id}`);
         const data = await response.json();
         setAnimal(data);
       } catch (error) {
