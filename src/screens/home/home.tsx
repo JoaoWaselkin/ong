@@ -39,6 +39,7 @@
 //     },
 // ];
 
+<<<<<<< HEAD
 // export const Home = () => {
 //     return (
 //         <View style={styles.container}>
@@ -48,6 +49,18 @@
 //                 keyExtractor={(item) => item.id}
 //                 renderItem={({ item }) => (
 //                     <View style={styles.card}>
+=======
+export const Home = () => {
+    return (
+        <View style={styles.container}>
+            {/* <Text style={styles.title}> Encontre seu Melhor Amigo de Quatro Patas! </Text> */}
+            <FlatList
+                ListHeaderComponent={<Text style={styles.title}> Encontre seu Melhor Amigo de Quatro Patas! </Text>}
+                data={dogs}
+                keyExtractor={(item) => item.id}
+                renderItem={({ item }) => (
+                    <View style={styles.card}>
+>>>>>>> ea7d1487dc4c273d006fa2855399b147cb735628
 
 //                         <Image source={{ uri: item.image }} style={styles.image} />
 //                         <Text style={styles.name}>{item.name}</Text>
@@ -72,9 +85,19 @@
 //                             <Text style={styles.saibaMais}>Saiba Mais</Text>
 //                         </TouchableOpacity>
                     
+<<<<<<< HEAD
 //                     </View>
 //                 )}
 //             />
 //         </View>
 //     );
 // };
+=======
+                    </View>
+                )}
+                
+            />
+        </View>
+    );
+};
+>>>>>>> ea7d1487dc4c273d006fa2855399b147cb735628
