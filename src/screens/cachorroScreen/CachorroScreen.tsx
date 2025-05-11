@@ -52,9 +52,9 @@ export const CachorroScreen = () => {
           return (
             (
               <View style={styles.card}>
-                <Image source={{ uri: item?.imagem }} style={styles.image} /> {}
-                <Text style={styles.name}>{item?.nome}</Text> {}
-                <Text>{item?.descricao}</Text> {}
+                <Image source={{ uri: item?.imagem }} style={styles.image} />
+                <Text style={styles.name}>{item?.nome}</Text>
+                <Text>{item?.descricao}</Text>
     
                 <TouchableOpacity
                   style={styles.cardBotao}

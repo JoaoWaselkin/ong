@@ -3,13 +3,16 @@ import axios from "axios";
 const API_URL = "http://127.0.0.1:8080/cachorro/buscar";
 
 export async function listarCachorros() {
+  try {
+    const resp = await axios.get(API_URL);
+    return resp.data.content;
+  } catch (err) {
+    console.error("Erro ao chamar a API:", err);
+    return [];
+  }
+}
 
-  return await axios.get(API_URL).then((resp)  => {
-    return resp.data
-  }).catch(() => {
-    return null
-  })
-
+  
   // try {
   //   const response = await fetch(API_URL, {
   //     headers: {
@@ -31,6 +34,5 @@ export async function listarCachorros() {
   //   console.error("Erro detalhado:", error);
   //   throw error;
   // }
-}
 
 
