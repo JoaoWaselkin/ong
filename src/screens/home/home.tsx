@@ -42,8 +42,9 @@ const dogs = [
 export const Home = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}> Encontre seu Melhor Amigo de Quatro Patas! </Text>
+            {/* <Text style={styles.title}> Encontre seu Melhor Amigo de Quatro Patas! </Text> */}
             <FlatList
+                ListHeaderComponent={<Text style={styles.title}> Encontre seu Melhor Amigo de Quatro Patas! </Text>}
                 data={dogs}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => (
@@ -74,6 +75,7 @@ export const Home = () => {
                     
                     </View>
                 )}
+                
             />
         </View>
     );

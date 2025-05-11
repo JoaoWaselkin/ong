@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#FFEDFA',
         alignItems: 'center',
         justifyContent: 'flex-start',
+        paddingBottom: 20
     },
 
     informacoesTitulo: {
@@ -42,6 +43,7 @@ export const styles = StyleSheet.create({
         color: '#EC7FA9',
         marginBottom: 5,
         marginRight: 141,
+        marginLeft: 15,
         fontWeight: 'medium',
     },
 
@@ -49,6 +51,8 @@ export const styles = StyleSheet.create({
         backgroundColor: '#EC7FA9',
         borderRadius: 20,
         marginTop: 20,
+        marginLeft: 'auto',
+        marginRight: 'auto',
         padding: 10,
         width: '85%',
         alignItems: 'center'
@@ -57,8 +61,14 @@ export const styles = StyleSheet.create({
     logo: {
         width: 150,
         height: 150,
-        marginBottom: 25
+        marginBottom: 25,
+        marginLeft: 'auto',
+        marginRight: 'auto',
     },
 
-
+    botaoAvancar: {
+        fontSize: 16,
+        color: '#fff',
+        fontWeight: 'bold'
+    },
 }) 

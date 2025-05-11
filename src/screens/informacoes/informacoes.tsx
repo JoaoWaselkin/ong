@@ -27,18 +27,15 @@ export const Informacoes = () => {
         'Compromisso de Longo Prazo.',
         'Segurança.',
     ];
-    
+
     const renderItem = ({ item }: { item: ItemResponsabilidade }) => (
         <View>
             <Text style={styles.listaTexto}>• {item.texto}</Text>
         </View>
     );
 
-
-
-    return (
-        <View style={styles.container}>
-
+    const ListHeader = () => (
+        <>
             <Text style={styles.informacoesTitulo}>Seja um Tutor Responsável: Seu Compromisso com uma Vida Feliz</Text>
 
             <Image source={Logo} style={styles.logo}/>
@@ -46,13 +43,31 @@ export const Informacoes = () => {
             <Text style={styles.informacoesTexto}>Adotar um animal é um ato de amor e generosidade, e nós estamos muito felizes com o seu interesse em dar um lar a um de nossos resgatados. Contudo, é fundamental que você esteja ciente das responsabilidades significativas que essa decisão envolve. Ao abrir seu coração e sua casa para um novo membro da família, você assume um compromisso de longo prazo com o bem-estar físico e emocional desse ser vivo.</Text>
 
             <Text style={styles.subtitleTexto}>Esteja preparado para oferecer:</Text>
+        </>
+    );
 
+
+    const ListFooter = () => (
+        <TouchableOpacity onPress={() => router.navigate('/')} style={styles.button}>
+            <Text style={styles.botaoAvancar}> Avançar </Text>
+        </TouchableOpacity>
+    );
+
+    return (
+        <View style={styles.container}>
             <FlatList
                 data={responsabilidades.map((resp, index) => ({ id: index.toString(), texto: resp }))}
                 renderItem={renderItem}
                 keyExtractor={(item: ItemResponsabilidade) => item.id}
+                ListHeaderComponent={ListHeader}
+                ListFooterComponent={ListFooter}
+
+
+                
             />
-            
+
+
+
             {/* este texto deve ser adiconado na proxima tela */}
             {/* <Text style={styles.informacoesTexto}>Lembre-se que a adoção é uma decisão séria e deve ser tomada com responsabilidade e planejamento. Ao preencher este formulário, você demonstra seu interesse em oferecer um lar amoroso e responsável. Estamos à disposição para esclarecer quaisquer dúvidas e auxiliá-lo nessa jornada. Acreditamos que juntos podemos proporcionar um futuro feliz e cheio de amor para este animal que tanto precisa.</Text>
              */}
