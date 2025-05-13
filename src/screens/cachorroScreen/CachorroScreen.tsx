@@ -45,15 +45,14 @@ export const CachorroScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}> Encontre seu Melhor Amigo de Quatro Patas! </Text>
       <FlatList
+        ListHeaderComponent={<Text style={styles.title}> Encontre seu Melhor Amigo de Quatro Patas! </Text>}
         data={cachorros}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <View style={styles.card}>
             <Image source={{ uri: item?.imagem }} style={styles.image} />
             <Text style={styles.name}>{item?.nome}</Text>
-            <Text>{item?.descricao}</Text>
             <TouchableOpacity
               style={styles.cardBotao}
               onPress={() =>

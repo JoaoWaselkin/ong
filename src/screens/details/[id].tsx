@@ -1,8 +1,9 @@
-import { View, Text, Image, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, Text, Image, StyleSheet, ActivityIndicator,  TouchableOpacity } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { styles } from './style';
 import { ScrollView } from 'react-native-gesture-handler';
 import { useEffect, useState } from 'react';
+import { ExpoRouter, router } from 'expo-router';
 
 interface Animal {
   id: string;
@@ -55,18 +56,23 @@ export default function Details() {
   }
 
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.titulo}> Informações Importantes para a Adoção de {animal.nome} </Text>
-      <Image source={{ uri: animal.imagem }} style={styles.image} />
-      <Text style={styles.name}> Apaixone-se por {animal.nome} </Text>
-      <View style={styles.caracteristicas}>
-        <Text style={styles.caracteristicasAnimal}>Raça: {animal.raca}</Text>
-        <Text style={styles.caracteristicasAnimal}>Porte: {animal.porte}</Text>
-        <Text style={styles.caracteristicasAnimal}>Sexo: {animal.sexo}</Text>
-        <Text style={styles.caracteristicasAnimal}>Peso: {animal.peso}</Text>
-        <Text style={styles.caracteristicasAnimal}>Castrado: {animal.castrado}</Text>
-      </View>
-      <Text style={styles.descricao}>{animal.descricao}</Text>
-    </ScrollView>
+  <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
+    <Text style={styles.titulo}> Informações Importantes para a Adoção de {animal.nome} </Text>
+    <Image source={{ uri: animal.imagem }} style={styles.image} />
+    <Text style={styles.name}> Apaixone-se por {animal.nome} </Text>
+    <View style={styles.caracteristicas}>
+      <Text style={styles.caracteristicasAnimal}>Raça: {animal.raca}</Text>
+      <Text style={styles.caracteristicasAnimal}>Porte: {animal.porte}</Text>
+      <Text style={styles.caracteristicasAnimal}>Sexo: {animal.sexo}</Text>
+      <Text style={styles.caracteristicasAnimal}>Peso: {animal.peso}</Text>
+      <Text style={styles.caracteristicasAnimal}>Castrado: {animal.castrado}</Text>
+    </View>
+    <Text style={styles.descricao}>{animal.descricao}</Text>
+
+    <TouchableOpacity style={styles.button} onPress={() => router.navigate('/stacks/formulario')}>
+      <Text style={styles.botaoAdoteme}> Adote-me </Text>
+    </TouchableOpacity>
+
+  </ScrollView>
   );
 }

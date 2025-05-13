@@ -16,6 +16,10 @@ export const HomeScreen = () => {
         <Text style={stylesHomeScreen.textoLogin} >Home</Text>
       </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => router.navigate('/stacks/sobre')}>
+        <Text style={stylesHomeScreen.textoLogin} >Sobre</Text>
+      </TouchableOpacity>
+
     </View> 
 
 

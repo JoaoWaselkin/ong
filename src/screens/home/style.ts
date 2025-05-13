@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#FFEDFA',
         padding: 20,
+        margin: 10
     },
 
     title: {
@@ -27,6 +28,7 @@ export const styles = StyleSheet.create({
         borderColor:'#EC7FA9',
         padding: 15,
         margin: 25,
+        marginTop: 5,
         shadowColor: '#EC7FA9',
         shadowOpacity: 0.2,
         shadowRadius: 4,
@@ -45,7 +47,7 @@ export const styles = StyleSheet.create({
         marginTop: 5
     },
     listCard:{
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
 
     cardBotao:{
@@ -55,7 +57,8 @@ export const styles = StyleSheet.create({
         borderRadius: 25,
         justifyContent: 'center',
         alignItems: 'center',
-        margin: 5
+        margin: 5,
+        marginBottom: 5,
     },
 
     saibaMais:{

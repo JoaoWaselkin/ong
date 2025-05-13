@@ -30,6 +30,9 @@ export const styles = StyleSheet.create({
         borderColor:'#EC7FA9',
         padding: 15,
         margin: 25,
+        marginBottom: 35,
+        marginLeft: 'auto',
+        marginRight: 'auto',
         shadowColor: '#EC7FA9',
         shadowOpacity: 0.2,
         shadowRadius: 4,
@@ -57,7 +60,7 @@ export const styles = StyleSheet.create({
         borderRadius: 25,
         justifyContent: 'center',
         alignItems: 'center',
-        margin: 5
+        margin: 5,
     },
 
     saibaMais:{
@@ -72,8 +75,9 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
-    marginHorizontal: 16, // Adiciona margem nas laterais
+    marginHorizontal: 16, 
   },
+
   emptyText: {
     textAlign: 'center',
     marginTop: 20,
