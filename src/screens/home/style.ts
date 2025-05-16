@@ -1,13 +1,15 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    container: {
+  listContent: {
+    paddingBottom: 20,
+  },
+  container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#FFEDFA',
         padding: 20,
-        margin: 10
     },
 
     title: {
@@ -28,12 +30,13 @@ export const styles = StyleSheet.create({
         borderColor:'#EC7FA9',
         padding: 15,
         margin: 25,
-        marginTop: 5,
+        marginBottom: 35,
+        marginLeft: 'auto',
+        marginRight: 'auto',
         shadowColor: '#EC7FA9',
         shadowOpacity: 0.2,
         shadowRadius: 4,
         elevation: 3,
-        marginLeft: 50
     },
     image: {
         width: 210,
@@ -47,7 +50,7 @@ export const styles = StyleSheet.create({
         marginTop: 5
     },
     listCard:{
-        flexDirection: 'row',
+        flexDirection: 'row'
     },
 
     cardBotao:{
@@ -58,12 +61,26 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         margin: 5,
-        marginBottom: 5,
     },
 
     saibaMais:{
         fontSize: 15,
         fontWeight: 'medium',
         color: '#fff',
-    }
+    },
+  
+  cardContainer: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+    marginHorizontal: 16, 
+  },
+
+  emptyText: {
+    textAlign: 'center',
+    marginTop: 20,
+    fontSize: 16,
+  }
 });

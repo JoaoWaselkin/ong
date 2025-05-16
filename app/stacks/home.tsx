@@ -1,4 +1,4 @@
-import { CachorroScreen } from "@/src/screens/cachorroScreen/CachorroScreen";
+import { CachorroScreen } from "@/src/screens/home/home";
 
 
 

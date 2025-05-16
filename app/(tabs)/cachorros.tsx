@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, Image, TouchableOpacity, ActivityIndicator } from 'react-native';
-import { styles } from '../../src/screens/cachorroScreen/style'; // Ajuste o caminho se necessário
+import { styles } from '../../src/screens/home/style'; // Ajuste o caminho se necessário
 import { router } from 'expo-router';
 import { listarCachorros } from '../../src/api/cachorroService';
 

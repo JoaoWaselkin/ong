@@ -47,7 +47,7 @@ export const Cadastro = () => {
                 
                 <View style={styles.containerButtons}>
                 <TouchableOpacity style={styles.infoButton}>
-                    <Text style={styles.secondaryButtonText}>Criar conta</Text>
+                    <Text style={styles.secondaryButtonText} onPress={() => router.navigate('/stacks/login')}>Criar conta</Text>
                 </TouchableOpacity>
                 </View>
             </View>

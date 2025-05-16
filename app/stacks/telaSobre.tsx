@@ -1,4 +1,5 @@
-import { Sobre } from "@/src/screens/sobre/sobre"
+import { Sobre } from "@/src/screens/sobre/sobre";
+
 
 
 export default function SobreScreen() {
