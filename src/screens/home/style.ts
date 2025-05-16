@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#FFEDFA',
         padding: 20,
+        paddingBottom: 80,
     },
 
     title: {
@@ -18,6 +19,7 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#EC7FA9',
         marginBottom: 20,
+        fontFamily: 'nunitoBold',
     },
     card: {
         width: 250,
@@ -47,7 +49,8 @@ export const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: 'bold',
         color: '#fff',
-        marginTop: 5
+        marginTop: 5,
+        fontFamily: 'nunito',
     },
     listCard:{
         flexDirection: 'row'
@@ -67,6 +70,7 @@ export const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: 'medium',
         color: '#fff',
+        fontFamily: 'nunito',
     },
   
   cardContainer: {
@@ -82,5 +86,6 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 20,
     fontSize: 16,
+    fontFamily: 'nunito',
   }
 });

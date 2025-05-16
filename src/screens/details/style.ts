@@ -26,12 +26,14 @@ titulo: {
     textAlign: 'center',
     padding: 10,
     alignSelf: 'stretch',
+    fontFamily: 'nunito',
 },
 name: {
     fontSize: 19,
     fontWeight: 'bold',
     color: '#E69DB8',
     marginVertical: 5,
+    fontFamily: 'nunito',
 },
 descricao: {
     fontSize: 15,
@@ -39,11 +41,13 @@ descricao: {
     color: '#E69DB8',
     padding: 10,
     alignSelf: 'stretch', 
+    fontFamily: 'nunito',
 },
 caracteristicas: {
     marginVertical: 10,
     alignSelf: 'stretch',
     alignItems: 'flex-start', 
+    fontFamily: 'nunito',
 },
 caracteristicasAnimal: {
     paddingVertical: 5,
@@ -51,6 +55,7 @@ caracteristicasAnimal: {
     fontWeight: 'medium',
     fontSize: 16,
     textAlign: 'left', // Alinha o texto de cada característica à esquerda
+    fontFamily: 'nunito',
 },
 button: {
     backgroundColor: '#EC7FA9',
@@ -64,5 +69,17 @@ botaoAdoteme: {
     fontSize: 16,
     color: '#fff',
     fontWeight: 'bold',
+    fontFamily: 'Nunito'
+},
+
+backButton: {
+    position: 'absolute',
+    minWidth: '8%',
+    top: 20,
+    left: 20,
+    zIndex: 10,
+    padding: 10,
+    borderRadius: 5,
+    backgroundColor: 'rgba(0,0,0,0.1)',
 },
 });

@@ -46,7 +46,7 @@ export const CachorroScreen = () => {
   return (
     <View style={styles.container}>
       <FlatList
-        ListHeaderComponent={<Text style={styles.title}> Encontre seu Melhor Amigo de Quatro Patas! </Text>}
+        ListHeaderComponent={<Text style={styles.title}> Encontre seu melhor amigo de quatro patas! </Text>}
         data={cachorros}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (

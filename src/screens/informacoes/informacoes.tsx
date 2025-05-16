@@ -1,7 +1,8 @@
-import { View, Text, FlatList, Image, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity, TextInput, Pressable } from 'react-native';
 import { styles } from './style';
 import { ExpoRoot, router, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
+import { FontAwesome } from '@expo/vector-icons';
 
 const Logo = require('../../../assets/images/dog.png');
 
@@ -36,7 +37,13 @@ export const Informacoes = () => {
 
     const ListHeader = () => (
         <>
-            <Text style={styles.informacoesTitulo}>Seja um Tutor Responsável: Seu Compromisso com uma Vida Feliz</Text>
+            <Pressable
+                style={styles.backButton}
+                onPress={() => router.back()}
+            >
+            <FontAwesome name="angle-left" size={30} color="white" />
+            </Pressable>
+            <Text style={styles.informacoesTitulo}>Seja um tutor responsável: Seu compromisso com uma vida feliz</Text>
 
             <Image source={Logo} style={styles.logo}/>
 

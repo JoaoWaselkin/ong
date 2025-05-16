@@ -29,12 +29,14 @@ export const styles = StyleSheet.create({
     fontWeight: 'medium',
     paddingBottom: 15,
     textAlign: 'center',
+    fontFamily: 'nunito',
   },
   title: {
     fontSize: 20,
     fontWeight: 'medium',
     marginBottom: 30,
-    color: '#EC7FA9' 
+    color: '#EC7FA9',
+    fontFamily: 'nunitoBold',
   },
   button: {
     backgroundColor: '#EC7FA9',
@@ -58,12 +60,14 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     color: '#BE5985',
     fontWeight: 'medium',
+    fontFamily: 'nunito',
 
   },
   buttonText: {
     fontSize: 16,
     color: 'white',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    fontFamily: 'nunito',
   },
   input: {
     width: '85%',
@@ -74,5 +78,6 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 20,
     backgroundColor: '#FFF',
+    fontFamily: 'nunito',
   }
 })

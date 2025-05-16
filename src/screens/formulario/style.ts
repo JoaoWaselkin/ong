@@ -28,7 +28,8 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#EC7FA9',
         marginTop: 75,
-        marginBottom: 50
+        marginBottom: 50,
+        fontFamily: 'nunitoBold',
     },
 
     formularioSubtitle: {
@@ -38,7 +39,8 @@ export const styles = StyleSheet.create({
         marginRight: 20,
         marginBottom: 25,
         color: '#EC7FA9',
-        textAlign: 'justify'
+        textAlign: 'center',
+        fontFamily: 'nunito',
     },
 
     formularioTexto: {
@@ -46,6 +48,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'regular',
         color: '#EC7FA9',
         marginBottom: 20,
+        fontFamily: 'nunito',
 
     },
 
@@ -67,8 +70,20 @@ export const styles = StyleSheet.create({
     botaoAvancar: {
         fontSize: 16,
         color: '#fff',
-        fontWeight: 'bold'
-    }
+        fontWeight: 'bold',
+        fontFamily: 'nunito',
+    },
+
+    backButton: {
+    position: 'absolute',
+    minWidth: '9%',
+    top: 20,
+    left: 20,
+    zIndex: 10,
+    padding: 10,
+    borderRadius: 5,
+    backgroundColor: 'rgba(0,0,0,0.1)',
+},
 
     
 }); 

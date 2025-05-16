@@ -4,9 +4,10 @@ export const styles = StyleSheet.create({
   scrollViewContainer: {
     flex: 1,
     backgroundColor: '#f8f8f8',
+    paddingBottom: 80
   },
   container: {
-        backgroundColor: '#FFEDFA',
+    backgroundColor: '#FFEDFA',
     padding: 20,
     alignItems: 'center',
   },
@@ -42,10 +43,10 @@ export const styles = StyleSheet.create({
   text: {
     fontSize: 15,
     flex: 1,
-    fontFamily: 'arial,sans-serif',
+    fontFamily: 'nunito',
     color: '#E69DB8',
     textAlign: 'justify',
-    fontWeight: 'bold'
+    fontWeight: 'regular'
   },
   viewMoreButton: {
     backgroundColor: '#EC7FA9',
@@ -62,6 +63,7 @@ export const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'nunito',
   },
   containerButtons: {
     textAlign: 'justify',

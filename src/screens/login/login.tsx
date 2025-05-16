@@ -83,7 +83,7 @@ export const Login = () => {
           onPress={entrarComFaceIDLocal}
           style={[styles.button]}
         >
-          <Text style={styles.buttonText}>Entrar Com FaceID</Text>
+          <Text style={styles.buttonText}>Entrar com FaceID</Text>
         </TouchableOpacity>
       </View>
     </View>

@@ -1,7 +1,8 @@
-import { View, Text, FlatList, Image, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity, TextInput, Pressable } from 'react-native';
 import { styles } from './style';
 import { router, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
+import { FontAwesome } from '@expo/vector-icons';
 
 const Logo = require('../../../assets/images/dog.png');
 
@@ -13,6 +14,12 @@ export const Formulario = () =>  {
 
     return(
         <View style={styles.container}>
+            <Pressable
+            style={styles.backButton}
+            onPress={() => router.back()}
+            >
+            <FontAwesome name="angle-left" size={30} color="black" />
+            </Pressable>
 
             <Text style={styles.formularioTitulo}> Formulário de Adoção </Text>
 
