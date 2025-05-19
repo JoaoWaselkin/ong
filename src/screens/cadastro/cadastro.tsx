@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { router } from 'expo-router'
 import { Text, View, TouchableOpacity, TextInput, Image} from "react-native"
 import { styles } from './style'
+import BackButton from '@/components/backButton'
 
-
-const Logo = require('../../../assets/images/dog.png');
+const Logo = require('../../../assets/images/logoNew.png');
 
 export const Cadastro = () => {
     const [texto, setUsuario] = useState('');
@@ -13,6 +13,8 @@ export const Cadastro = () => {
 
     return (
         <View style={styles.outerContainer}>
+            <BackButton/>
+
             <View style={styles.container}>
 
                 <Text style={styles.title}> Seu cadastro é o primeiro passo para um futuro melhor, dê uma chance para quem não tem voz </Text>  

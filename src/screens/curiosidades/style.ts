@@ -1,6 +1,15 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  titulo: {
+  fontSize: 20,
+  fontWeight: 'bold',
+  color: '#EC7FA9',
+  marginBottom: 25,
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  textAlign: 'justify'
+  },
   scrollViewContainer: {
     flex: 1,
     backgroundColor: '#f8f8f8',
@@ -11,15 +20,17 @@ export const styles = StyleSheet.create({
     padding: 20,
     alignItems: 'center',
   },
-  backButton: {
-    position: 'absolute',
-    minWidth: '9%',
-    top: 20,
-    left: 20,
-    zIndex: 10,
-    padding: 10,
-    borderRadius: 5,
-    backgroundColor: 'rgba(0,0,0,0.1)',
+  card:{
+    backgroundColor: '#fff',
+    padding: 20,
+    borderRadius: 12,
+    marginVertical: 10,
+    alignSelf: 'stretch',
+    shadowColor: "#000",
+    shadowOffset: { width: 3, height: 5 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 2,
   },
   logo: {
     width: 80,
@@ -44,7 +55,7 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     flex: 1,
     fontFamily: 'nunito',
-    color: '#E69DB8',
+    color: '#A97487',
     textAlign: 'justify',
     fontWeight: 'regular'
   },
@@ -68,6 +79,7 @@ export const styles = StyleSheet.create({
   containerButtons: {
     textAlign: 'justify',
     flex: 1,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    gap: 30
   }
 });

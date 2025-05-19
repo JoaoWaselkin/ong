@@ -21,9 +21,8 @@ export const styles = StyleSheet.create({
     // borderRadius: 10,
   },
   logo: {
-    width: 150,
-    height: 150,
-    marginBottom: 20
+    width: 200,
+    height: 200,
   },
   subtitle: {
     fontSize: 14,
@@ -42,14 +41,6 @@ export const styles = StyleSheet.create({
     fontFamily: 'nunitoBold',
     // color: '#FFDA76',
   },
-  button: {
-    backgroundColor: '#EC7FA9',
-    borderRadius: 20,
-    marginTop: 20,
-    padding: 10,
-    width: '85%',
-    alignItems: 'center'
-  },
   containerButtons: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -67,12 +58,6 @@ export const styles = StyleSheet.create({
     fontWeight: 'medium',
     fontFamily: 'nunito',
 
-  },
-  buttonText: {
-    fontSize: 16,
-    color: 'white',
-    fontWeight: 'bold',
-    fontFamily: 'nunito',
   },
   input: {
     width: '85%',

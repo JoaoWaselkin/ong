@@ -1,4 +1,4 @@
-import { TelaInicial } from "@/src/screens/telaInicial/telaInicial";
+import { TelaInicial } from "@/src/screens/curiosidades/curiosidades";
 
 
 export default function telaInicialScreen() {

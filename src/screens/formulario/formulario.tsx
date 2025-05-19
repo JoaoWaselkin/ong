@@ -3,8 +3,9 @@ import { styles } from './style';
 import { router, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
 import { FontAwesome } from '@expo/vector-icons';
+import BackButton from '@/components/backButton';
 
-const Logo = require('../../../assets/images/dog.png');
+const Logo = require('../../../assets/images/logoNew.png');
 
 export const Formulario = () =>  {
     const [nome, setUsuario] = useState('');
@@ -14,12 +15,7 @@ export const Formulario = () =>  {
 
     return(
         <View style={styles.container}>
-            <Pressable
-            style={styles.backButton}
-            onPress={() => router.back()}
-            >
-            <FontAwesome name="angle-left" size={30} color="black" />
-            </Pressable>
+            <BackButton/>
 
             <Text style={styles.formularioTitulo}> Formulário de Adoção </Text>
 

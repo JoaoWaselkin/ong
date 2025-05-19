@@ -3,8 +3,9 @@ import { styles } from './style';
 import { ExpoRoot, router, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
 import { FontAwesome } from '@expo/vector-icons';
+import BackButton from '@/components/backButton';
 
-const Logo = require('../../../assets/images/dog.png');
+const Logo = require('../../../assets/images/logoNew.png');
 
 interface ItemResponsabilidade {
     id: string;
@@ -37,12 +38,7 @@ export const Informacoes = () => {
 
     const ListHeader = () => (
         <>
-            <Pressable
-                style={styles.backButton}
-                onPress={() => router.back()}
-            >
-            <FontAwesome name="angle-left" size={30} color="white" />
-            </Pressable>
+            <BackButton/>
             <Text style={styles.informacoesTitulo}>Seja um tutor responsável: Seu compromisso com uma vida feliz</Text>
 
             <Image source={Logo} style={styles.logo}/>

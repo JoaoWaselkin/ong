@@ -3,8 +3,9 @@ import { router } from 'expo-router';
 import { Text, View, TouchableOpacity, TextInput, Image, Alert, Pressable } from 'react-native';
 import { styles } from './style';
 import * as SecureStore from 'expo-secure-store';
+import CustomButton from '@/components/CustomButton';
 
-const Logo = require('../../../assets/images/dog.png');
+const Logo = require('../../../assets/images/logoNew.png');
 
 export const Login = () => {
   const [email, setUsuario] = useState('');
@@ -71,20 +72,18 @@ export const Login = () => {
           </TouchableOpacity>
         </View>
 
-        <TouchableOpacity
-          style={styles.button}
+        <CustomButton
+          title="Login"
           onPress={realizarLoginLocal}
+          loading={loading}
           disabled={loading}
-        >
-          <Text style={styles.buttonText}>{loading ? 'Entrando...' : 'Login'}</Text>
-        </TouchableOpacity>
+        />
 
-        <TouchableOpacity
+        <CustomButton
+          title="Entrar com a biometria"
           onPress={entrarComFaceIDLocal}
-          style={[styles.button]}
-        >
-          <Text style={styles.buttonText}>Entrar com FaceID</Text>
-        </TouchableOpacity>
+
+        />
       </View>
     </View>
   );

@@ -2,15 +2,17 @@ import { useState } from 'react'
 import { router } from 'expo-router'
 import { Text, View, TouchableOpacity, TextInput, Image} from "react-native"
 import { styles } from './style'
+import BackButton from '@/components/backButton'
 
-
-const Logo = require('../../../assets/images/dog2.png');
+const Logo = require('../../../assets/images/logoSad.png');
 
 export const RecuperarConta = () => {
     const [email, setEmail] = useState('');
 
     return (
         <View style={styles.outerContainer}>
+            <BackButton/>
+
             <View style={styles.container}>
 
                 <Text style={styles.subtitle}>Problemas para acessar sua conta?</Text>  

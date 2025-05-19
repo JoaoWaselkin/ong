@@ -2,8 +2,9 @@ import { View, Text, FlatList, Image, TouchableOpacity, TextInput } from 'react-
 import { styles } from './style';
 import { ExpoRoot, router, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
+import BackButton from '@/components/backButton';
 
-const Logo = require('../../../assets/images/dog.png');
+const Logo = require('../../../assets/images/logoNew.png');
 
 interface ItemComoFunciona {
     id: string;
@@ -27,6 +28,8 @@ export const Sobre = () => {
 
         const ListHeader = () => (
             <>
+
+            <BackButton/>
 
             <Text style={styles.informacoesTitulo}>Sobre a Ong</Text>
 
