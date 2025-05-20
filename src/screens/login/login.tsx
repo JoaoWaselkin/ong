@@ -4,6 +4,7 @@ import { Text, View, TouchableOpacity, TextInput, Image, Alert, Pressable } from
 import { styles } from './style';
 import * as SecureStore from 'expo-secure-store';
 import CustomButton from '@/components/CustomButton';
+import * as LocalAuthentication from 'expo-local-authentication';
 
 const Logo = require('../../../assets/images/logoNew.png');
 
@@ -24,16 +25,34 @@ export const Login = () => {
     }, 2000);
   };
 
-  const entrarComFaceIDLocal = async () => {
-    router.navigate('/stacks/reconhecimento');
-    alert('A funcionalidade de autenticação com FaceID ou Biometria será implementada aqui.');
+  const entrarComBiometria = async () => {
+    const compatible = await LocalAuthentication.hasHardwareAsync();
+    if (!compatible) {
+      Alert.alert('Erro', 'Seu aparelho não tem suporte a biometria.');
+      return;
+    }
+
+    const isBiometricEnrolled = await LocalAuthentication.isEnrolledAsync();
+    if (!isBiometricEnrolled) {
+      Alert.alert('Login', 'Nenhuma biometria encontrada. Por favor, cadastre uma biometria no seu dispositivo!');
+      return;
+    }
+
+    const auth = await LocalAuthentication.authenticateAsync({
+      promptMessage: 'Login com Biometria',
+      fallbackLabel: 'Biometria Não Reconhecida'
+    });
+
+    if (auth.success) {
+      router.navigate('/stacks/home');
+    } else {
+      Alert.alert('Falha na Autenticação', 'Não foi possível autenticar com a biometria. Tente novamente.');
+    }
   };
 
   return (
     <View style={styles.outerContainer}>
       <View style={styles.container}>
-
-
         <Image source={Logo} style={styles.logo} />
         <Text style={styles.subtitle}>Ajude animais de rua a encontrar um novo lar!</Text>
         <Text style={styles.title}>Login</Text>
@@ -81,8 +100,7 @@ export const Login = () => {
 
         <CustomButton
           title="Entrar com a biometria"
-          onPress={entrarComFaceIDLocal}
-
+          onPress={entrarComBiometria}
         />
       </View>
     </View>
