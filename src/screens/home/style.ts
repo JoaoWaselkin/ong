@@ -54,9 +54,16 @@ export const styles = StyleSheet.create({
     },
     listCard:{
         flexDirection: 'row'
-    },
-
-    cardBotao:{
+    },  
+    cardContainer: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.1,
+      shadowRadius: 4,
+      elevation: 3,
+      marginHorizontal: 16, 
+  },
+  cardBotao:{
         height: 40,
         width: 125,
         backgroundColor: '#EC7FA9',
@@ -72,20 +79,4 @@ export const styles = StyleSheet.create({
         color: '#fff',
         fontFamily: 'nunito',
     },
-  
-  cardContainer: {
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
-    marginHorizontal: 16, 
-  },
-
-  emptyText: {
-    textAlign: 'center',
-    marginTop: 20,
-    fontSize: 16,
-    fontFamily: 'nunito',
-  }
 });

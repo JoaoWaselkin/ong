@@ -3,6 +3,7 @@ import { View, Text, FlatList, Image, TouchableOpacity, ActivityIndicator } from
 import { styles } from './style';
 import { router } from 'expo-router';
 import { listarCachorros } from '../../api/cachorroService';
+import CustomButton from '@/components/buttonDefault/CustomButton';
 
 
 interface Cachorro {
@@ -53,6 +54,7 @@ export const CachorroScreen = () => {
           <View style={styles.card}>
             <Image source={{ uri: item?.imagem }} style={styles.image} />
             <Text style={styles.name}>{item?.nome}</Text>
+
             <TouchableOpacity
               style={styles.cardBotao}
               onPress={() =>
@@ -65,6 +67,7 @@ export const CachorroScreen = () => {
               <Text style={styles.saibaMais}>Saiba Mais</Text>
             </TouchableOpacity>
           </View>
+
         )}
         onEndReached={carregarMaisCachorros}
         onEndReachedThreshold={0.5}

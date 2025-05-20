@@ -4,8 +4,8 @@ import { styles } from './style';
 import { router } from 'expo-router';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import BackButton from '@/components/backButton';
-import CustomButton from '@/components/CustomButton';
+import BackButton from '@/components/backButton/backButton';
+import CustomButton from '@/components/buttonDefault/CustomButton';
 
 const Logo = require('../../../assets/images/logoNew.png');
 const Golden = require('../../../assets/images/goldenimage.png');

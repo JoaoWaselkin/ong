@@ -58,32 +58,4 @@ export const styles = StyleSheet.create({
         marginBottom: 35
     },
 
-    button: {
-        backgroundColor: '#EC7FA9',
-        borderRadius: 20,
-        marginTop: 20,
-        padding: 10,
-        width: '85%',
-        alignItems: 'center'
-    },
-
-    botaoAvancar: {
-        fontSize: 16,
-        color: '#fff',
-        fontWeight: 'bold',
-        fontFamily: 'nunito',
-    },
-
-    backButton: {
-    position: 'absolute',
-    minWidth: '9%',
-    top: 20,
-    left: 20,
-    zIndex: 10,
-    padding: 10,
-    borderRadius: 5,
-    backgroundColor: 'rgba(0,0,0,0.1)',
-},
-
-    
 }); 

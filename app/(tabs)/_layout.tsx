@@ -1,5 +1,6 @@
 import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons'; // Ou outra biblioteca de ícones
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import  React  from 'react'
 import { Dimensions, Text, View } from 'react-native';
 
@@ -107,6 +108,31 @@ return (
                 fontFamily: 'nunito',
               }}>
                 Curiosidades
+              </Text>
+            </View>
+          )
+        }}
+      /> }
+
+      { <Tabs.Screen
+        name="index"
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <View style={{
+              alignItems: 'center',
+              paddingTop: 22,
+              width: width/5,
+              paddingRight: 15,
+            }}>
+
+              <FontAwesome5 name="user-circle" size={24} color="white" />
+              <Text style={{
+                color: focused ? '#FFEDFA' : 'white',
+                fontSize: 12,
+                marginTop: 4,
+                fontFamily: 'nunito',
+              }}>
+                Perfil
               </Text>
             </View>
           )

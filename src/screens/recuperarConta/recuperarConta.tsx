@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { router } from 'expo-router'
 import { Text, View, TouchableOpacity, TextInput, Image} from "react-native"
 import { styles } from './style'
-import BackButton from '@/components/backButton'
+import BackButton from '@/components/backButton/backButton'
 
 const Logo = require('../../../assets/images/logoSad.png');
 

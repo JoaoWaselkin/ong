@@ -7,6 +7,11 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     // backgroundColor: '#BE5985'
   },
+  scrollContainer: {
+  flexGrow: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
+  },
   container: {
     height: '100%',
     width: '100%',

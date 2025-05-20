@@ -87,21 +87,4 @@ caracteristicasAnimal: {
     fontSize: 16,
     textAlign: 'left',
     fontFamily: 'nunito',
-},
-button: {
-    backgroundColor: '#EC7FA9',
-    borderRadius: 20,
-    marginTop: 20,
-    padding: 10,
-    width: '85%',
-    alignItems: 'center',
-},
-botaoAdoteme: {
-    fontSize: 16,
-    color: '#fff',
-    fontWeight: 'bold',
-    fontFamily: 'Nunito'
-},
-
-
-});
+}});

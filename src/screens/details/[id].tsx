@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react';
 import { ExpoRouter, router } from 'expo-router';
 import { FontAwesome } from '@expo/vector-icons';
 import { capitalizeFirstLetter } from '../../../scripts/muda-texto'
-import BackButton from '@/components/backButton';
+import BackButton from '@/components/backButton/backButton';
+import CustomButton from '@/components/buttonDefault/CustomButton';
 
 interface Animal {
   id: string;
@@ -99,11 +100,10 @@ export default function Details() {
   </View>
 </View>
 
-    
-
-    <TouchableOpacity style={styles.button} onPress={() => router.navigate('/stacks/formulario')}>
-      <Text style={styles.botaoAdoteme}> Adote-me </Text>
-    </TouchableOpacity>
+    <CustomButton
+          title="Adote-me"
+          onPress={() => router.navigate('/stacks/formulario')}
+    />    
 
   </ScrollView>
   );

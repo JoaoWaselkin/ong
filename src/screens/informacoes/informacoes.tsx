@@ -3,7 +3,7 @@ import { styles } from './style';
 import { ExpoRoot, router, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
 import { FontAwesome } from '@expo/vector-icons';
-import BackButton from '@/components/backButton';
+import BackButton from '@/components/backButton/backButton';
 
 const Logo = require('../../../assets/images/logoNew.png');
 

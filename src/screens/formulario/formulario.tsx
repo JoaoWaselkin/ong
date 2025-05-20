@@ -3,7 +3,8 @@ import { styles } from './style';
 import { router, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
 import { FontAwesome } from '@expo/vector-icons';
-import BackButton from '@/components/backButton';
+import BackButton from '@/components/backButton/backButton';
+import CustomButton from '@/components/buttonDefault/CustomButton';
 
 const Logo = require('../../../assets/images/logoNew.png');
 
@@ -55,9 +56,11 @@ export const Formulario = () =>  {
             placeholderTextColor="#999"
         />
 
-        <TouchableOpacity onPress={() => router.navigate('/stacks/informacoes')} style={styles.button}>
-            <Text style={styles.botaoAvancar}> Avançar </Text>
-        </TouchableOpacity>
+        <CustomButton
+          title="Avançar"
+          onPress={() => router.navigate('/stacks/informacoes')}
+        />   
+
 
         </View>
     )

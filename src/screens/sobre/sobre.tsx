@@ -2,7 +2,7 @@ import { View, Text, FlatList, Image, TouchableOpacity, TextInput } from 'react-
 import { styles } from './style';
 import { ExpoRoot, router, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
-import BackButton from '@/components/backButton';
+import BackButton from '@/components/backButton/backButton';
 
 const Logo = require('../../../assets/images/logoNew.png');
 

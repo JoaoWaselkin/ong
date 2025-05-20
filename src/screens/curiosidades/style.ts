@@ -33,10 +33,8 @@ export const styles = StyleSheet.create({
     elevation: 2,
   },
   logo: {
-    width: 80,
-    height: 80,
-    borderRadius: 40,
-    marginBottom: 20,
+    width: 120,
+    height: 120,
   },
   section: {
     flexDirection: 'column',
@@ -45,7 +43,7 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
   },
   image: {
-    width: 350,
+    width: 'auto',
     height: 180,
     borderRadius: 7,
     marginBottom: 20,
@@ -58,23 +56,6 @@ export const styles = StyleSheet.create({
     color: '#A97487',
     textAlign: 'justify',
     fontWeight: 'regular'
-  },
-  viewMoreButton: {
-    backgroundColor: '#EC7FA9',
-    paddingVertical: 15,
-    paddingHorizontal: 30,
-    borderRadius: 10,
-    marginTop: 30,
-    margin: 10,
-  },
-  viewMoreButtonText: {
-    textAlign: 'center',
-    width: 120,
-    height: 30,
-    color: 'white',
-    fontSize: 18,
-    fontWeight: 'bold',
-    fontFamily: 'nunito',
   },
   containerButtons: {
     textAlign: 'justify',

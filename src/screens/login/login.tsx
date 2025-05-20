@@ -3,7 +3,7 @@ import { router } from 'expo-router';
 import { Text, View, TouchableOpacity, TextInput, Image, Alert, Pressable } from 'react-native';
 import { styles } from './style';
 import * as SecureStore from 'expo-secure-store';
-import CustomButton from '@/components/CustomButton';
+import CustomButton from '@/components/buttonDefault/CustomButton';
 import * as LocalAuthentication from 'expo-local-authentication';
 
 const Logo = require('../../../assets/images/logoNew.png');
