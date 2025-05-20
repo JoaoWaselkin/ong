@@ -1,6 +1,6 @@
 import Details from "@/src/screens/details/[id]";
 
 
-export default function cadastroScreen() {
+export default function infoScreen() {
     return <Details/>
 }
