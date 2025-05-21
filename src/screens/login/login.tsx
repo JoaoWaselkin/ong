@@ -65,7 +65,7 @@ export const Login = () => {
       }
     } catch (error) {
       console.error("DEBUG (Login): Erro ao tentar fazer login:", error);
-      Alert.alert('Erro', 'Ocorreu um erro ao tentar fazer login. Tente novamente.');
+      alert('Ocorreu um erro ao tentar fazer login. Tente novamente.');
     } finally {
       setLoading(false);
       console.log('DEBUG (Login): realizarLoginLocal concluído.');
