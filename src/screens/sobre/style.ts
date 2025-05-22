@@ -50,6 +50,7 @@ export const styles = StyleSheet.create({
         padding: 10,
         marginBottom: 15,
         alignItems: 'center',
+        justifyContent: 'center',
         borderRadius: 8,
         elevation: 3,
         shadowColor: '#000',
@@ -67,11 +68,12 @@ export const styles = StyleSheet.create({
         fontFamily: 'Nunito',
         fontSize: 15,
         fontWeight: 'bold',
-        color: '#A97487'
+        color: '#A97487',
+        margin: 8,
+        textAlign: 'center'
     },
     cardTexto: {
         fontFamily: 'Nunito',
-        marginTop: 8,
         fontSize: 14,
         color: '#333',
         textAlign: 'center',

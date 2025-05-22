@@ -31,13 +31,13 @@ export const Informacoes = () => {
                     </View>
 
                     <View style={styles.card}>
-                        <AntDesign name="hearto" size={50} color="#" />
+                        <AntDesign name="hearto" size={50} color="#"/>
                         <Text style={styles.cardTitulo}>Amor e cuidado</Text>
                         <Text style={styles.cardTexto}>Promovemos o amor e o cuidado incondicional com todos os cães que acolhemos.</Text>
                     </View>
 
                     <View style={styles.card}>
-                        <Ionicons name="paw-outline" size={50} color="black" />
+                        <Ionicons name="paw-outline" size={50} color="black"/>
                         <Text style={styles.cardTitulo}>Resgate e reabilitação</Text>
                         <Text style={styles.cardTexto}>Resgatamos cães em situação de risco e trabalhamos para sua recuperação física e emocional.</Text>
                     </View>
