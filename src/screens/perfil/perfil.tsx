@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons"
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import AntDesign from '@expo/vector-icons/AntDesign';
+import { router } from "expo-router";
 
 
 export const Perfil = () => {
@@ -87,6 +88,28 @@ export const Perfil = () => {
                     </View>
 
                     {/* Fim da quebra */}
+                    <View style={styles.cardCadastro}>
+                        <View style={styles.imageCadastro}>
+                            <Ionicons name="star-outline" size={24} color="black" />
+                        </View>
+
+                        <View style={styles.cardTexts}>
+                            <Text style={styles.titleCadastro}>
+                                Curiosidades
+                            </Text>
+
+                            <Text style={styles.textCadastro}>
+                                Curiosidades do reino animal.
+                            </Text>
+                        </View>
+
+                        <TouchableOpacity style={styles.setaCadastro}>
+                            <AntDesign name="right" size={15} color="black" 
+                            onPress={() => router.navigate('/stacks/curiosidades')}/>
+                        </TouchableOpacity>
+                    </View>
+
+                    
 
 
                 </View>

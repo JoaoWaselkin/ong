@@ -20,7 +20,7 @@ export const Informacoes = () => {
                 <View style={styles.header}>
                     <BackButton />
                     <Logo/>
-                    <Text></Text>
+                    
                 </View>
 
                 <View style={styles.contentContainer}>
@@ -73,10 +73,8 @@ export const Informacoes = () => {
                     </View>
 
                     <View style={styles.card}>
-                    
                         <Ionicons name="leaf" size={50} color="black" />
                         
-                    
                         <Text style={styles.cardTitulo}>Voluntariado</Text>
                         <Text style={styles.cardTexto}>Valorizamos o trabalho voluntário como força vital da nossa ONG.</Text>
                         

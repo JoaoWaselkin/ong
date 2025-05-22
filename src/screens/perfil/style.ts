@@ -52,7 +52,9 @@ export const styles = StyleSheet.create({
     },
 
     textInfo: {
-
+        color: '#A97487',
+        fontWeight: 'bold',
+        fontSize: 16,
         fontFamily: 'Nunito',
         marginTop: 25,
         marginLeft: 5
@@ -113,7 +115,7 @@ export const styles = StyleSheet.create({
     },
 
     cardTexts: {
-
+        
         flexDirection: 'column',
         width: '70%',
         height: 'auto',
@@ -121,7 +123,7 @@ export const styles = StyleSheet.create({
     },
 
     titleCadastro: {
-
+        color: '#A97487',
         width: '80%',
         height: 'auto',
         fontSize: 15,
@@ -130,7 +132,7 @@ export const styles = StyleSheet.create({
     },
 
     textCadastro: {
-
+        color: '#333',
         width: '100%',
         height: 'auto',
         // backgroundColor: 'black',
