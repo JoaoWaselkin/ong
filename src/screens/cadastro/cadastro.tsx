@@ -4,8 +4,8 @@ import { Text, View, TouchableOpacity, TextInput, Image, Platform, Alert } from 
 import { styles } from './style';
 import BackButton from '@/components/backButton/backButton';
 import { saveUserCredentials } from '../../utils/authStorage';
+import Logo from '@/components/logo/logo'
 
-const Logo = require('../../../assets/images/logoNew.png');
 
 export const Cadastro = () => {
     const [username, setUsername] = useState('');
@@ -92,8 +92,7 @@ export const Cadastro = () => {
                     secureTextEntry={true}
                 />
 
-                <Image source={Logo} style={styles.logo}/>
-
+                <Logo/>
                 <View style={styles.containerButtons}>
                     <TouchableOpacity
                         style={styles.infoButton}

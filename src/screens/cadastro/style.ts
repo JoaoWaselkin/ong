@@ -20,11 +20,6 @@ export const styles = StyleSheet.create({
     shadowRadius: 3.84,
     // borderRadius: 10,
   },
-  logo: {
-    width: 150,
-    height: 150,
-    marginTop: 30
-  },
   title: {
     fontSize: 20,
     color: '#EC7FA9',

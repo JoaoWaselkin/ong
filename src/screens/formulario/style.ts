@@ -50,12 +50,5 @@ export const styles = StyleSheet.create({
         marginBottom: 20,
         fontFamily: 'nunito',
 
-    },
-
-    logo: {
-        width: 150,
-        height: 150,
-        marginBottom: 35
-    },
-
+    }
 }); 
