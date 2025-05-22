@@ -25,10 +25,6 @@ export const styles = StyleSheet.create({
     shadowRadius: 3.84,
     // borderRadius: 10,
   },
-  logo: {
-    width: 200,
-    height: 200,
-  },
   subtitle: {
     fontSize: 14,
     // color: '#FFB8E0',

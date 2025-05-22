@@ -5,8 +5,8 @@ import React, { useState } from 'react';
 import { FontAwesome } from '@expo/vector-icons';
 import BackButton from '@/components/backButton/backButton';
 import CustomButton from '@/components/buttonDefault/CustomButton';
+import Logo from '@/components/logo/logo';
 
-const Logo = require('../../../assets/images/logoNew.png');
 
 export const Formulario = () =>  {
     const [nome, setUsuario] = useState('');
@@ -21,7 +21,7 @@ export const Formulario = () =>  {
             <Text style={styles.formularioTitulo}> Formulário de Adoção </Text>
 
             <Text style={styles.formularioSubtitle}>Preencha com atenção para darmos seguimento ao processo de adoção</Text>
-            <Image source={Logo} style={styles.logo}/>
+            <Logo/>
             <Text style={styles.formularioTexto}>Informações Pessoais:</Text>
 
         <TextInput

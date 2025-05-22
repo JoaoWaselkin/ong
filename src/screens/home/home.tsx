@@ -3,7 +3,7 @@ import { View, Text, FlatList, Image, TouchableOpacity, ActivityIndicator } from
 import { styles } from './style';
 import { router } from 'expo-router';
 import { listarCachorros } from '../../api/cachorroService';
-import CustomButton from '@/components/buttonDefault/CustomButton';
+import SearchBar from '@/components/searchBar/SearchBar';
 
 
 interface Cachorro {
@@ -46,6 +46,7 @@ export const CachorroScreen = () => {
 
   return (
     <View style={styles.container}>
+      <SearchBar placeholder="Buscar animais..." />
       <FlatList
         ListHeaderComponent={<Text style={styles.title}> Encontre seu melhor amigo de quatro patas! </Text>}
         data={cachorros}

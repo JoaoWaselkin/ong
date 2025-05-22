@@ -6,8 +6,8 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import BackButton from '@/components/backButton/backButton';
 import CustomButton from '@/components/buttonDefault/CustomButton';
+import Logo from '@/components/logo/logo';
 
-const Logo = require('../../../assets/images/logoNew.png');
 const Golden = require('../../../assets/images/goldenimage.png');
 const Shih = require('../../../assets/images/shil.png');
 
@@ -18,9 +18,7 @@ export const TelaInicial = () => {
         <View style={styles.container}>
           <BackButton/>
 
-          <Image
-            source={Logo}
-            style={styles.logo}
+          <Logo
           />
 
           <View style={styles.section}>

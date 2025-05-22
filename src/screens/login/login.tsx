@@ -3,10 +3,10 @@ import { Platform, Text, View, TouchableOpacity, TextInput, Image, ActivityIndic
 import { router } from 'expo-router';
 import { styles } from './style';
 import CustomButton from '@/components/buttonDefault/CustomButton';
+import Logo from '@/components/logo/logo';
 import * as LocalAuthentication from 'expo-local-authentication';
 import { verifyUserCredentials, getAuthenticatedStatus, setAuthenticatedStatus } from '../../utils/authStorage';
 
-const Logo = require('../../../assets/images/logoNew.png');
 
 export const Login = () => {
   const [email, setUsuario] = useState('');
@@ -124,7 +124,7 @@ export const Login = () => {
   return (
     <View style={styles.outerContainer}>
       <View style={styles.container}>
-        <Image source={Logo} style={styles.logo} />
+        <Logo/>
         <Text style={styles.subtitle}>Ajude animais de rua a encontrar um novo lar!</Text>
         <Text style={styles.title}>Login</Text>
 
