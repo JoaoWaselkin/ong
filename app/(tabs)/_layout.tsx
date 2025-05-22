@@ -115,7 +115,7 @@ return (
       /> }
 
       { <Tabs.Screen
-        name="index"
+        name="perfil"
         options={{
           tabBarIcon: ({ focused }) => (
             <View style={{
