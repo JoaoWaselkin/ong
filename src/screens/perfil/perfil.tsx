@@ -1,10 +1,10 @@
 import { View, Text, TouchableOpacity } from "react-native"
 import { styles } from "./style"
 import { Ionicons } from "@expo/vector-icons"
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { router } from "expo-router";
+import { BottomTab } from "@/components/bottomTab/bottomTab";
+
 
 
 export const Perfil = () => {
@@ -114,7 +114,7 @@ export const Perfil = () => {
 
                 </View>
             </View>
-
+        <BottomTab/>
         </View>
     )
 }

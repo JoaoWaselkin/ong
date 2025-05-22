@@ -21,7 +21,6 @@ export const Splash = () => {
         style={styles.logo}
         resizeMode="contain"
       />
-      <Text style={styles.title}>Bem-vindo ao Meu Pet Amoroso 💖</Text>
     </View>
   );
 };

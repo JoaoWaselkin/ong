@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, Image, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity, ActivityIndicator, TouchableHighlight } from 'react-native';
 import { styles } from './style';
 import { router } from 'expo-router';
 import { listarCachorros } from '../../api/cachorroService';
 import SearchBar from '@/components/searchBar/SearchBar';
+import { Ionicons } from '@expo/vector-icons'; 
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import Octicons from '@expo/vector-icons/Octicons';
+import { BottomTab } from '@/components/bottomTab/bottomTab';
+
+// import { TouchableOpacityBase } from 'react-native';
 
 
 interface Cachorro {
@@ -44,6 +51,7 @@ export const CachorroScreen = () => {
     carregarMaisCachorros(); // carrega a primeira página ao montar
   }, []);
 
+
   return (
     <View style={styles.container}>
       <SearchBar placeholder="Buscar animais..." />
@@ -74,6 +82,8 @@ export const CachorroScreen = () => {
         onEndReachedThreshold={0.5}
         ListFooterComponent={isLoading ? <ActivityIndicator size="small" /> : null}
       />
+
+      <BottomTab/>
     </View>
   );
 };

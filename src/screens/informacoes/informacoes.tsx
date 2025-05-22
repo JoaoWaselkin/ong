@@ -2,6 +2,7 @@ import { View, Text, FlatList, Image, TouchableOpacity } from 'react-native';
 import { styles } from './style';
 import { router } from 'expo-router';
 import BackButton from '@/components/backButton/backButton';
+import { BottomTab } from '@/components/bottomTab/bottomTab';
 
 const Logo = require('../../../assets/images/logoNew.png');
 
@@ -69,6 +70,7 @@ export const Informacoes = () => {
             {/* este texto deve ser adiconado na proxima tela */}
             {/* <Text style={styles.informacoesTexto}>Lembre-se que a adoção é uma decisão séria e deve ser tomada com responsabilidade e planejamento. Ao preencher este formulário, você demonstra seu interesse em oferecer um lar amoroso e responsável. Estamos à disposição para esclarecer quaisquer dúvidas e auxiliá-lo nessa jornada. Acreditamos que juntos podemos proporcionar um futuro feliz e cheio de amor para este animal que tanto precisa.</Text>
              */}
+
         </View>
     )
 }

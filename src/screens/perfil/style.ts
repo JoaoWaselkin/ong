@@ -70,6 +70,7 @@ export const styles = StyleSheet.create({
         marginTop: 20,
         paddingBottom: 20,
         backgroundColor: '#FFF',
+        marginBottom: 95,
         // alignItems: 'center',
         // justifyContent: 'center'
     },

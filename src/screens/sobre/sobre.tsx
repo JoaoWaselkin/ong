@@ -6,6 +6,7 @@ import BackButton from '@/components/backButton/backButton';
 import Logo from '@/components/logo/logo';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { BottomTab } from '@/components/bottomTab/bottomTab';
 
 
 
@@ -79,8 +80,11 @@ export const Informacoes = () => {
                         <Text style={styles.cardTexto}>Valorizamos o trabalho voluntário como força vital da nossa ONG.</Text>
                         
                     </View>
+                    
                 </View>
             </View>
+            
         </ScrollView>
+    
     );
 }
