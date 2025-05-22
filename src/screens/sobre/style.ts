@@ -2,14 +2,13 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     scrollViewContainer: {
-    flex: 1,
-    backgroundColor: '#f8f8f8',
-  },
+        flex: 1,
+        backgroundColor: '#FFEDFA', 
+    },
     container: {
-    flex: 1,
-    backgroundColor: '#FFEDFA',
-    
-  },
+        backgroundColor: '#FFEDFA',
+        flexGrow: 1,
+    },
     header: {
         flexDirection: 'row',
         alignItems: 'center',
@@ -23,7 +22,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingHorizontal: 20,
         flexGrow: 1,
-        paddingBottom: 20
+        paddingBottom: 100,
     },
     contentContainerTitulo: {
         marginBottom: 20,
@@ -45,11 +44,11 @@ export const styles = StyleSheet.create({
         textAlign: 'center'
     },
     card: {
-        width: '48%',  
+        width: '48%',
         minHeight: 250,
         backgroundColor: '#fff',
         padding: 10,
-        marginBottom: 15, 
+        marginBottom: 15,
         alignItems: 'center',
         borderRadius: 8,
         elevation: 3,
@@ -62,7 +61,7 @@ export const styles = StyleSheet.create({
         width: 'auto',
         height: 100,
         resizeMode: 'cover',
-        borderRadius: 8, 
+        borderRadius: 8,
     },
     cardTitulo: {
         fontFamily: 'Nunito',
@@ -70,13 +69,11 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#A97487'
     },
-
     cardTexto: {
-    fontFamily: 'Nunito',
-    marginTop: 8,
-    fontSize: 14,
-    color: '#333',
-    textAlign: 'center',
-  },
-
-}) 
+        fontFamily: 'Nunito',
+        marginTop: 8,
+        fontSize: 14,
+        color: '#333',
+        textAlign: 'center',
+    },
+});
