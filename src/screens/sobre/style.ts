@@ -19,9 +19,9 @@ export const styles = StyleSheet.create({
     contentContainer: {
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'space-between',
-        paddingHorizontal: 20,
-        flexGrow: 1,
+        justifyContent: 'center',
+        gap: 5,
+        paddingHorizontal: 10,
         paddingBottom: 100,
     },
     contentContainerTitulo: {
@@ -44,13 +44,14 @@ export const styles = StyleSheet.create({
         textAlign: 'center'
     },
     card: {
-        width: '48%',
+        width: '45%',
+        margin: 8,
         minHeight: 250,
         backgroundColor: '#fff',
-        padding: 10,
+        padding: 16,
         marginBottom: 15,
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         borderRadius: 8,
         elevation: 3,
         shadowColor: '#000',
@@ -77,5 +78,6 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         color: '#333',
         textAlign: 'center',
+        flexShrink: 1
     },
 });

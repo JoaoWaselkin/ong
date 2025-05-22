@@ -9,20 +9,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
     },
-
-    input: {
-        width: '85%',
-        height: 40,
-        borderColor: '#EC7FA9',
-        borderWidth: 1,
-        borderRadius:20,
-        textAlign: 'center',
-        marginBottom: 20,
-        backgroundColor: '#FFF',
-        // color: 'white'
-        // paddingHorizontal: 15,
-    },
-
+    
     formularioTitulo: {
         fontSize: 20,
         fontWeight: 'bold',

@@ -1,8 +1,6 @@
-import { View, Text, FlatList, Image, TouchableOpacity, TextInput, Pressable } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity } from 'react-native';
 import { styles } from './style';
-import { ExpoRoot, router, useLocalSearchParams } from 'expo-router';
-import React, { useState } from 'react';
-import { FontAwesome } from '@expo/vector-icons';
+import { router } from 'expo-router';
 import BackButton from '@/components/backButton/backButton';
 
 const Logo = require('../../../assets/images/logoNew.png');
@@ -64,9 +62,6 @@ export const Informacoes = () => {
                 keyExtractor={(item: ItemResponsabilidade) => item.id}
                 ListHeaderComponent={ListHeader}
                 ListFooterComponent={ListFooter}
-
-
-                
             />
 
 

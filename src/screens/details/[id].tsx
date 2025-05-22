@@ -8,6 +8,9 @@ import { FontAwesome } from '@expo/vector-icons';
 import { capitalizeFirstLetter } from '../../../scripts/muda-texto'
 import BackButton from '@/components/backButton/backButton';
 import CustomButton from '@/components/buttonDefault/CustomButton';
+import { Platform, Alert } from 'react-native';
+import { clearAuthStorage } from '@/src/utils/authStorage';
+
 
 interface Animal {
   id: string;
@@ -59,6 +62,36 @@ export default function Details() {
     );
   }
 
+  const handleLogout = async () => {
+        if (Platform.OS === 'web') {
+            const confirmLogout = window.confirm("Tem certeza que deseja sair?");
+            if (confirmLogout) {
+                await clearAuthStorage();
+                console.log('DEBUG (Formulario): Usuário deslogado. Redirecionando para login.');
+                router.replace('/stacks/login');
+            }
+        } else {
+            Alert.alert(
+                "Sair da Conta",
+                "Tem certeza que deseja sair?",
+                [
+                    {
+                        text: "Cancelar",
+                        style: "cancel"
+                    },
+                    {
+                        text: "Sair",
+                        onPress: async () => {
+                            await clearAuthStorage();
+                            console.log('DEBUG (Formulario): Usuário deslogado. Redirecionando para login.');
+                            router.replace('/stacks/login');
+                        }
+                    }
+                ]
+            );
+        }
+    };
+
   return (
   <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
     <BackButton/>
@@ -103,7 +136,13 @@ export default function Details() {
     <CustomButton
           title="Adote-me"
           onPress={() => router.navigate('/stacks/formulario')}
-    />    
+    />
+
+    <TouchableOpacity onPress={handleLogout}>
+                 <Text> Sair da Conta </Text>
+           </TouchableOpacity>
+    
+        
 
   </ScrollView>
   );

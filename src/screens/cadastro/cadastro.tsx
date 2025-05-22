@@ -5,6 +5,7 @@ import { styles } from './style';
 import BackButton from '@/components/backButton/backButton';
 import { saveUserCredentials } from '../../utils/authStorage';
 import Logo from '@/components/logo/logo'
+import CustomInput from '@/components/CustomInput/CustomInput';
 
 
 export const Cadastro = () => {
@@ -64,30 +65,27 @@ export const Cadastro = () => {
                 <Text style={styles.title}> Seu cadastro é o primeiro passo para um futuro melhor, dê uma chance para quem não tem voz </Text>
                 <Text style={styles.subtitle}>Cadastre-se</Text>
 
-                <TextInput
-                    style={styles.input}
+                <CustomInput
+                    placeholder="@Username"
                     onChangeText={setUsername}
                     value={username}
-                    placeholder="@seuUsuario"
                     placeholderTextColor="#999"
                     autoCapitalize="none"
                 />
 
-                <TextInput
-                    style={styles.input}
+                <CustomInput
+                    placeholder="example@gmail.com"
                     onChangeText={setEmail}
                     value={email}
-                    placeholder="exemplo@email.com"
                     placeholderTextColor="#999"
                     keyboardType="email-address"
                     autoCapitalize="none"
                 />
 
-                <TextInput
-                    style={styles.input}
+                <CustomInput
+                    placeholder="*********"
                     onChangeText={setSenha}
                     value={senha}
-                    placeholder="*********"
                     placeholderTextColor="#999"
                     secureTextEntry={true}
                 />

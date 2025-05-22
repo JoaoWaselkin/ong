@@ -6,10 +6,11 @@ import CustomButton from '@/components/buttonDefault/CustomButton';
 import Logo from '@/components/logo/logo';
 import * as LocalAuthentication from 'expo-local-authentication';
 import { verifyUserCredentials, getAuthenticatedStatus, setAuthenticatedStatus } from '../../utils/authStorage';
+import CustomInput from '@/components/CustomInput/CustomInput';
 
 
 export const Login = () => {
-  const [email, setUsuario] = useState('');
+  const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [loading, setLoading] = useState(false);
   const [appLoading, setAppLoading] = useState(true);
@@ -128,21 +129,19 @@ export const Login = () => {
         <Text style={styles.subtitle}>Ajude animais de rua a encontrar um novo lar!</Text>
         <Text style={styles.title}>Login</Text>
 
-        <TextInput
-          style={styles.input}
-          onChangeText={setUsuario}
+        <CustomInput
+          placeholder="example@gmail.com"
+          onChangeText={setEmail}
           value={email}
-          placeholder="seu@email.com"
           placeholderTextColor="#999"
           keyboardType="email-address"
           autoCapitalize="none"
         />
 
-        <TextInput
-          style={styles.input}
+        <CustomInput
+          placeholder="*********"
           onChangeText={setSenha}
           value={senha}
-          placeholder="*********"
           placeholderTextColor="#999"
           secureTextEntry={true}
         />

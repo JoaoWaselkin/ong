@@ -60,17 +60,5 @@ export const styles = StyleSheet.create({
     fontFamily: 'nunito',
 
   },
-  input: {
-    width: '85%',
-    height: 40,
-    borderColor: '#EC7FA9',
-    borderWidth: 1,
-    borderRadius:20,
-    textAlign: 'center',
-    marginBottom: 20,
-    backgroundColor: '#FFF',
-    fontFamily: 'nunito',
-    // color: 'white'
-    // paddingHorizontal: 15,
-  }
+
 })

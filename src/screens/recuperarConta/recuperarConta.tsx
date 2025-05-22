@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { router } from 'expo-router'
-import { Text, View, TouchableOpacity, TextInput, Image} from "react-native"
+import { Text, View, TouchableOpacity, Image} from "react-native"
 import { styles } from './style'
 import BackButton from '@/components/backButton/backButton'
+import CustomInput from '@/components/CustomInput/CustomInput'
 
 const Logo = require('../../../assets/images/logoSad.png');
 
@@ -19,12 +19,13 @@ export const RecuperarConta = () => {
                 <Image source={Logo} style={styles.logo}/>
                 <Text style={styles.title}>Recupere aqui!</Text>  
 
-                <TextInput
-                style={styles.input}
-                onChangeText={setEmail}
-                value={email}
-                placeholder="seu@email.com"
-                placeholderTextColor="#999"
+                <CustomInput
+                    placeholder="example@gmail.com"
+                    onChangeText={setEmail}
+                    value={email}
+                    placeholderTextColor="#999"
+                    keyboardType="email-address"
+                    autoCapitalize="none"
                 />
                 
                 <View style={styles.containerButtons}>
