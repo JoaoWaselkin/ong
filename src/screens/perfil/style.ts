@@ -1,6 +1,4 @@
 import { StyleSheet } from "react-native";
-import { HoverEffect } from "react-native-gesture-handler";
-
 
 export const styles = StyleSheet.create({
 
@@ -63,7 +61,7 @@ export const styles = StyleSheet.create({
     cardInformacoes: {
         width: '80%',
         height: 'auto',
-        minHeight: 450,
+        minHeight: '60%',
         borderColor: '#FFEDFA',
         borderWidth: 2,
         borderRadius: 20,
@@ -92,9 +90,10 @@ export const styles = StyleSheet.create({
     cardConfig: {
 
         width: '85%',
-        height: 450,
+        height: 350,
         // backgroundColor: 'blue',
-        margin: 'auto'
+        margin: 'auto',
+        marginBottom: 20
 
     },
 
