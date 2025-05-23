@@ -46,12 +46,21 @@ export const styles = StyleSheet.create({
         borderRadius: 25,
     },
     name: {
-        fontSize: 15,
+        fontSize: 16,
         fontWeight: 'bold',
         color: '#fff',
         marginTop: 5,
         fontFamily: 'nunito',
     },
+
+    raca: {
+        fontSize: 14,
+        fontWeight: 'regular',
+        color: '#FFF',
+        marginTop: 1,
+        fontFamily: 'nunito',
+    },
+
     listCard:{
         flexDirection: 'row'
     },  

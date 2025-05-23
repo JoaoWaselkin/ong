@@ -33,10 +33,10 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#fff',
     borderRadius: 25,
     paddingHorizontal: 15,
-    height: 50,
+    height: 45,
     width: 'auto',
     margin: 16,
     elevation: 2,
@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
     color: '#333',
     marginLeft: 10,
     paddingVertical: 8,
+    fontFamily: 'nunito'
   },
   icon: {
     marginRight: 5,

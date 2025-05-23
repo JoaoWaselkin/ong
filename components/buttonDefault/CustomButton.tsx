@@ -29,7 +29,8 @@ const CustomButton: React.FC<CustomButtonProps> = ({
 
 const styles = StyleSheet.create({
   button: {
-    minWidth: '85%',
+    height: 45,
+    width: 280,
     backgroundColor: '#EC7FA9',
     paddingVertical: 12,
     paddingHorizontal: 34,

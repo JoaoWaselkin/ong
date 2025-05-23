@@ -2,12 +2,16 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     scrollViewContainer: {
-        flex: 1,
-        backgroundColor: '#FFEDFA', 
+        flexGrow: 1,
+        backgroundColor: '#FFEDFA',
+        paddingBottom: 5 
+
     },
     container: {
         backgroundColor: '#FFEDFA',
-        flexGrow: 1,
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     header: {
         flexDirection: 'row',

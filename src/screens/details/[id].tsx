@@ -138,11 +138,6 @@ export default function Details() {
           onPress={() => router.navigate('/stacks/formulario')}
     />
 
-    <TouchableOpacity onPress={handleLogout}>
-                 <Text> Sair da Conta </Text>
-           </TouchableOpacity>
-    
-        
 
   </ScrollView>
   );

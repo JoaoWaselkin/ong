@@ -15,19 +15,20 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#EC7FA9',
         marginTop: 70,
-        marginBottom: 25,
+        marginBottom: 10,
         marginLeft: 25,
         marginRight: 25,
-        textAlign: 'justify',
+        textAlign: 'center',
         fontFamily: 'nunitoBold',
     },
 
     informacoesTexto:{
         fontSize: 16,
-        color: '#E69DB8',
+        color: '#A97487',
         marginLeft: 15,
         marginRight: 15,
         marginBottom: 15,
+        marginTop: 15,
         textAlign: 'justify',
         fontFamily: 'nunito',
     },
@@ -42,11 +43,11 @@ export const styles = StyleSheet.create({
     },
 
     subtitleTexto: {
-        fontSize: 16,
+        fontSize: 20,
         color: '#EC7FA9',
         marginBottom: 5,
-        marginRight: 141,
-        marginLeft: 15,
+        marginRight: 'auto',
+        marginLeft: 'auto',
         fontWeight: 'medium',
         fontFamily: 'nunito',
     },
@@ -63,9 +64,9 @@ export const styles = StyleSheet.create({
     },
 
     logo: {
-        width: 150,
-        height: 150,
-        marginBottom: 25,
+        width: 200,
+        height: 200,
+        marginBottom: 10,
         marginLeft: 'auto',
         marginRight: 'auto',
     },
@@ -87,4 +88,47 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     backgroundColor: '#EC7FA9',
 },
+
+    cardTop: {
+        height: 330, 
+        width: 350, 
+        backgroundColor: '#fff',
+        justifyContent:'center',
+        alignItems:'center',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: 20,
+        borderBottomLeftRadius: 15,
+        borderBottomRightRadius: 5,
+        borderTopRightRadius: 15,
+        borderTopLeftRadius: 5,
+    },
+
+    containerCard: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: 20,
+        paddingBottom: 20,
+        gap: 10
+    },
+
+    card: {
+        height: 180,
+        width: 150,
+        backgroundColor: '#fff',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    cardTexto: {
+        color: '#A97487',
+        fontSize: 14,
+        fontFamily: 'nunito',
+        fontWeight: 'regular',
+        textAlign: 'center',
+        // paddingTop: 10
+    }
 }) 
