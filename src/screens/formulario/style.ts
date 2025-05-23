@@ -3,18 +3,25 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
 
-    container: {
+    containerPai: {
         flex: 1,
         backgroundColor: '#FFEDFA',
+
+    },
+
+    container: {
+        height: 750,
+        width: '90%',
+        backgroundColor: '#FFEDFA',
+        justifyContent: 'center',
         alignItems: 'center',
-        justifyContent: 'flex-start',
+        margin: 'auto'
     },
     
     formularioTitulo: {
         fontSize: 20,
         fontWeight: 'bold',
         color: '#EC7FA9',
-        marginTop: 75,
         marginBottom: 50,
         fontFamily: 'nunitoBold',
     },

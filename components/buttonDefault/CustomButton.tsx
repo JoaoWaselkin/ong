@@ -30,7 +30,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
 const styles = StyleSheet.create({
   button: {
     height: 45,
-    width: 280,
+    width: 150,
     backgroundColor: '#EC7FA9',
     paddingVertical: 12,
     paddingHorizontal: 34,
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     opacity: 0.6,
   },
   buttonText: {
-    fontSize: 16,
+    fontSize: 15,
     color: 'white',
     fontWeight: 'bold',
     fontFamily: 'nunito',

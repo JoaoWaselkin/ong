@@ -11,7 +11,7 @@ import { BottomTab } from '@/components/bottomTab/bottomTab';
 
 
 export const Informacoes = () => {
-
+    
     return (
         <View style={styles.container}>
             <ScrollView style={styles.scrollViewContainer}>

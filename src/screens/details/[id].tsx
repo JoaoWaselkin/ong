@@ -93,52 +93,59 @@ export default function Details() {
     };
 
   return (
-  <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
-    <BackButton/>
-    <Text style={styles.titulo}> Informações importantes para a adoção de {animal.nome} </Text>
-    <View >
-      <Image source={{ uri: animal.imagem }} style={styles.image} />
-      <View>
-        
+  <ScrollView style={styles.containerPai} contentContainerStyle={styles.scrollContent}>
+    <View style={{
+              width: 30,
+              height: 50,
+              right: 180
+          }}>
+        <BackButton/>
+    </View>
+    <View style={styles.container}>
+        <Text style={styles.titulo}> Informações importantes para a adoção de {animal.nome} </Text>
+        <View >
+          <Image source={{ uri: animal.imagem }} style={styles.image} />
+          <View>
+            
+          </View>
+        </View>
+
+        <View style={styles.caracteristicas}>
+      <Text style={styles.name}> {animal.nome} </Text>
+      <Text style={styles.descricao}>{animal.descricao}</Text>
+
+      <View style={styles.infoGrid}>
+        <View style={styles.infoItem}>
+          <Text style={styles.label}>Raça:</Text>
+          <Text style={styles.value}>{animal.raca}</Text>
+        </View>
+        <View style={styles.infoItem}>
+          <Text style={styles.label}>Porte:</Text>
+          <Text style={styles.value}>{capitalizeFirstLetter(animal.porte)}</Text>
+        </View>
+
+        <View style={styles.infoItem}>
+          <Text style={styles.label}>Sexo:</Text>
+          <Text style={styles.value}>{capitalizeFirstLetter(animal.sexo)}</Text>
+        </View>
+        <View style={styles.infoItem}>
+          <Text style={styles.label}>Peso:</Text>
+          <Text style={styles.value}>{animal.peso}</Text>
+        </View>
+
+        <View style={styles.infoItem}>
+          <Text style={styles.label}>Castrado:</Text>
+          <Text style={styles.value}>{capitalizeFirstLetter(animal.castrado)}</Text>
+        </View>
       </View>
     </View>
 
-    <View style={styles.caracteristicas}>
-  <Text style={styles.name}> {animal.nome} </Text>
-  <Text style={styles.descricao}>{animal.descricao}</Text>
+        <CustomButton
+              title="Adote-me"
+              onPress={() => router.navigate('/stacks/formulario')}
+        />
 
-  <View style={styles.infoGrid}>
-    <View style={styles.infoItem}>
-      <Text style={styles.label}>Raça:</Text>
-      <Text style={styles.value}>{animal.raca}</Text>
     </View>
-    <View style={styles.infoItem}>
-      <Text style={styles.label}>Porte:</Text>
-      <Text style={styles.value}>{capitalizeFirstLetter(animal.porte)}</Text>
-    </View>
-
-    <View style={styles.infoItem}>
-      <Text style={styles.label}>Sexo:</Text>
-      <Text style={styles.value}>{capitalizeFirstLetter(animal.sexo)}</Text>
-    </View>
-    <View style={styles.infoItem}>
-      <Text style={styles.label}>Peso:</Text>
-      <Text style={styles.value}>{animal.peso}</Text>
-    </View>
-
-    <View style={styles.infoItem}>
-      <Text style={styles.label}>Castrado:</Text>
-      <Text style={styles.value}>{capitalizeFirstLetter(animal.castrado)}</Text>
-    </View>
-  </View>
-</View>
-
-    <CustomButton
-          title="Adote-me"
-          onPress={() => router.navigate('/stacks/formulario')}
-    />
-
-
   </ScrollView>
   );
 }

@@ -15,44 +15,46 @@ export const Formulario = () =>  {
     const [email, setEmail] = useState('');
 
     return(
-        <View style={styles.container}>
+        <View style={styles.containerPai}>
             <BackButton/>
-            <Text style={styles.formularioTitulo}> Formulário de Adoção </Text>
-            <Text style={styles.formularioSubtitle}>Preencha com atenção para darmos seguimento ao processo de adoção</Text>
-            <Logo/>
-            <Text style={styles.formularioTexto}>Informações Pessoais:</Text>
+            <View style={styles.container}>
+                <Text style={styles.formularioTitulo}> Formulário de Adoção </Text>
+                <Text style={styles.formularioSubtitle}>Preencha com atenção para darmos seguimento ao processo de adoção</Text>
+                <Logo/>
+                <Text style={styles.formularioTexto}>Informações Pessoais:</Text>
 
-            <CustomInput
-                placeholder="Nome"
-                value={nome}
-                onChangeText={setNome}
-            />
+                <CustomInput
+                    placeholder="Nome"
+                    value={nome}
+                    onChangeText={setNome}
+                />
 
-            <CustomInput
-                placeholder="Sobrenome"
-                value={sobrenome}
-                onChangeText={setSobrenome}
-            />
+                <CustomInput
+                    placeholder="Sobrenome"
+                    value={sobrenome}
+                    onChangeText={setSobrenome}
+                />
 
-            <CustomInput
-                placeholder="(XX) XXXXX-XXXX"
-                value={telefone}
-                onChangeText={setTelefone}
-            />
+                <CustomInput
+                    placeholder="(XX) XXXXX-XXXX"
+                    value={telefone}
+                    onChangeText={setTelefone}
+                />
 
-            <CustomInput
-                placeholder="example@gmail.com"
-                onChangeText={setEmail}
-                value={email}
-                placeholderTextColor="#999"
-                keyboardType="email-address"
-                autoCapitalize="none"
-            />
+                <CustomInput
+                    placeholder="example@gmail.com"
+                    onChangeText={setEmail}
+                    value={email}
+                    placeholderTextColor="#999"
+                    keyboardType="email-address"
+                    autoCapitalize="none"
+                />
 
-            <CustomButton
-                title="Avançar"
-                onPress={() => router.navigate('/stacks/informacoes')}
-            />   
+                <CustomButton
+                    title="Avançar"
+                    onPress={() => router.navigate('/stacks/informacoes')}
+                />
+            </View>
         </View>
     )
 

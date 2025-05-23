@@ -2,10 +2,20 @@ import { StyleSheet } from "react-native";
 
 
 export const styles = StyleSheet.create({
-container: {
+containerPai: {
     flex: 1,
-    backgroundColor: '#FFEDFA',
+    backgroundColor: '#FFEDFA'
 },
+
+container: {
+    height: 700,
+    width: '100%',
+    backgroundColor: '#FFEDFA',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 'auto'
+  },
+
 scrollContent: {
     flexGrow: 1,
     alignItems: 'center', 
@@ -13,15 +23,15 @@ scrollContent: {
     paddingHorizontal: 20,
 },
 image: {
-    width: 385,
-    height: 250,
+    width: 300,
+    height: 200,
     borderRadius: 10,
     marginVertical: 15,
 },
 
 titulo: {
     color: '#EC7FA9',
-    marginTop: 60,
+    // marginTop: 40,
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',

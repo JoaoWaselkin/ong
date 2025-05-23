@@ -11,22 +11,33 @@ export const styles = StyleSheet.create({
     textAlign: 'justify',
     fontFamily: 'Nunito'
   },
+  
   scrollViewContainer: {
-    flexGrow: 1,
-
+    flex: 1,
+    // justifyContent: 'center',
+    // alignItems: 'center'
   },
+
   container: {
+
+    width: '100%',
+    minHeight: 400,
+    height: 'auto',
     flex: 1,
     backgroundColor: '#FFEDFA',
     paddingTop: 20,
     paddingRight: 20,
     paddingBottom: 60,
     paddingLeft: 20,
-    alignItems: 'center',
+
   },
+  
   card:{
+    width: '90%',
+    height: 450,
     backgroundColor: '#fff',
     padding: 20,
+    margin: 'auto', 
     borderRadius: 12,
     marginVertical: 10,
     alignSelf: 'stretch',
@@ -39,6 +50,7 @@ export const styles = StyleSheet.create({
   logo: {
     width: 120,
     height: 120,
+    resizeMode: 'cover',
   },
   section: {
     flexDirection: 'column',
@@ -67,6 +79,6 @@ export const styles = StyleSheet.create({
     textAlign: 'justify',
     flex: 1,
     flexDirection: 'row',
-    gap: 30
+    gap: 20
   }
 });
