@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#FFEDFA',
         padding: 20,
-        paddingBottom: 45,
+        paddingBottom: 55,
     },
 
     title: {

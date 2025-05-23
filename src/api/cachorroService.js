@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const API_URL = "http://192.168.1.156:8080/cachorro/buscar";
+export const API_URL = "http://192.168.15.6:8080/cachorro/buscar";
 
 export async function listarCachorros(pagina = 0) {
   try {

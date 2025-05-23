@@ -70,7 +70,10 @@ export const TelaInicial = () => {
                 </View>
               </SafeAreaView>
           </ScrollView>
-          <BottomTab/>
+          <View style={{alignItems: 'center', justifyContent: 'center', marginBottom: 8}}>
+                <BottomTab/>
+          </View>
+          
         </View>    
     );
 };
