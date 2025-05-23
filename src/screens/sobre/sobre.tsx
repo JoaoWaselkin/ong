@@ -12,14 +12,13 @@ import { BottomTab } from '@/components/bottomTab/bottomTab';
 
 export const Informacoes = () => {
 
-
     return (
         <View style={styles.container}>
             <ScrollView style={styles.scrollViewContainer}>
 
                 <View style={styles.header}>
-                    <BackButton />
-                    <Logo/>
+                    <BackButton/>
+                    <Logo/> 
                 </View>
 
                     <View style={styles.contentContainer}>
@@ -78,13 +77,10 @@ export const Informacoes = () => {
                             <Text style={styles.cardTexto}>Valorizamos o trabalho voluntário como força vital da nossa ONG.</Text>
                             
                         </View>
-                        
-                    </View>
-                
 
+                    </View>
             </ScrollView>
-            <BottomTab/>
+            <BottomTab/> 
         </View>
-    
     );
 }

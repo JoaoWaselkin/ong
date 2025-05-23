@@ -59,48 +59,55 @@ export const Cadastro = () => {
 
     return (
         <View style={styles.outerContainer}>
-            <BackButton/>
-
             <View style={styles.container}>
-                <Text style={styles.title}> Seu cadastro é o primeiro passo para um futuro melhor, dê uma chance para quem não tem voz </Text>
-                <Text style={styles.subtitle}>Cadastre-se</Text>
+                <View style={{
+                    width: 30,
+                    height: 50
+                }}>
+                <BackButton/>
+                </View>
+                <View style={styles.containerCad}>
+                    
+                    <Text style={styles.title}> Seu cadastro é o primeiro passo para um futuro melhor, dê uma chance para quem não tem voz </Text>
+                    <Text style={styles.subtitle}>Cadastre-se</Text>
 
-                <CustomInput
-                    placeholder="@Username"
-                    onChangeText={setUsername}
-                    value={username}
-                    placeholderTextColor="#999"
-                    autoCapitalize="none"
-                />
+                    <CustomInput
+                        placeholder="@Username"
+                        onChangeText={setUsername}
+                        value={username}
+                        placeholderTextColor="#999"
+                        autoCapitalize="none"
+                    />
 
-                <CustomInput
-                    placeholder="example@gmail.com"
-                    onChangeText={setEmail}
-                    value={email}
-                    placeholderTextColor="#999"
-                    keyboardType="email-address"
-                    autoCapitalize="none"
-                />
+                    <CustomInput
+                        placeholder="example@gmail.com"
+                        onChangeText={setEmail}
+                        value={email}
+                        placeholderTextColor="#999"
+                        keyboardType="email-address"
+                        autoCapitalize="none"
+                    />
 
-                <CustomInput
-                    placeholder="*********"
-                    onChangeText={setSenha}
-                    value={senha}
-                    placeholderTextColor="#999"
-                    secureTextEntry={true}
-                />
+                    <CustomInput
+                        placeholder="*********"
+                        onChangeText={setSenha}
+                        value={senha}
+                        placeholderTextColor="#999"
+                        secureTextEntry={true}
+                    />
 
-                <Logo/>
-                <View style={styles.containerButtons}>
-                    <TouchableOpacity
-                        style={styles.infoButton}
-                        onPress={handleCadastro}
-                        disabled={loading}
-                    >
-                        <Text style={styles.secondaryButtonText}>
-                            {loading ? 'Cadastrando...' : 'Criar conta'}
-                        </Text>
-                    </TouchableOpacity>
+                    <Logo/>
+                    <View style={styles.containerButtons}>
+                        <TouchableOpacity
+                            style={styles.button}
+                            onPress={handleCadastro}
+                            disabled={loading}
+                        >
+                            <Text style={styles.secondaryButtonText}>
+                                {loading ? 'Cadastrando...' : 'Criar conta'}
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
             </View>
         </View>

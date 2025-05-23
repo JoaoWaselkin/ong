@@ -10,7 +10,7 @@ const BackButton = () => {
 
   return (
     <Pressable style={styles.backButton} onPress={() => router.back()}>
-      <FontAwesome name="angle-left" size={24} color="#A97487" />
+      <FontAwesome style={{ bottom: 2}} name="angle-left" size={24} color="#A97487" />
       <Text style={styles.backText}>Voltar</Text>
     </Pressable>
   );
@@ -18,26 +18,24 @@ const BackButton = () => {
 
 const styles = StyleSheet.create({
   backButton: {
+    width: 87,
+    height: 40,
     flexDirection: 'row',
     alignItems: 'center',
-    position: 'absolute',
     top: 20,
     left: 20,
     paddingVertical: 8,
     paddingHorizontal: 12,
     borderRadius: 20,
     backgroundColor: 'rgba(250, 220, 232, 0.4)',
-    zIndex: 10,
-
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 3,
 
-    elevation: 3,
   },
   backText: {
-    marginLeft: 5,
+    marginLeft: 7,
     fontSize: 16,
     color: '#A97487',
     fontFamily: 'nunito',

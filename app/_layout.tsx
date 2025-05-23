@@ -32,7 +32,7 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={DefaultTheme}>
-      <Stack screenOptions={{ headerShown: false }}>
+        <Stack screenOptions={{ headerShown: false, animation: 'slide_from_left' }}>
         <Stack.Screen name="index" />
         <Stack.Screen name="(stacks)" />
       </Stack>

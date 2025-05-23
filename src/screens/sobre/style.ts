@@ -4,21 +4,19 @@ export const styles = StyleSheet.create({
     scrollViewContainer: {
         flexGrow: 1,
         backgroundColor: '#FFEDFA',
-        paddingBottom: 5 
-
     },
     container: {
         backgroundColor: '#FFEDFA',
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center'
     },
     header: {
-        flexDirection: 'row',
-        alignItems: 'center',
+        // backgroundColor: 'black',
+        flexDirection: 'column',
+        // alignItems: 'center',
         justifyContent: 'space-between',
         paddingHorizontal: 20,
-        paddingTop: 40,
+        paddingTop: 20,
     },
     contentContainer: {
         flexDirection: 'row',

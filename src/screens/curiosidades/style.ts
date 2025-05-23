@@ -2,21 +2,26 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   titulo: {
-  fontSize: 20,
-  fontWeight: 'bold',
-  color: '#EC7FA9',
-  marginBottom: 25,
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  textAlign: 'justify'
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: '#A97487',
+    marginBottom: 25,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    textAlign: 'justify',
+    fontFamily: 'Nunito'
   },
   scrollViewContainer: {
-    flex: 1,
-    backgroundColor: '#f8f8f8',
+    flexGrow: 1,
+
   },
   container: {
+    flex: 1,
     backgroundColor: '#FFEDFA',
-    padding: 20,
+    paddingTop: 20,
+    paddingRight: 20,
+    paddingBottom: 60,
+    paddingLeft: 20,
     alignItems: 'center',
   },
   card:{
@@ -57,6 +62,8 @@ export const styles = StyleSheet.create({
     fontWeight: 'regular'
   },
   containerButtons: {
+
+    margin: 'auto',
     textAlign: 'justify',
     flex: 1,
     flexDirection: 'row',

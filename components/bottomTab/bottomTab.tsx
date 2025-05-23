@@ -32,22 +32,23 @@ export const BottomTab = () => {
 export const styles = StyleSheet.create({
 
     containerTab: {
-            width: 300,
-            height: 53,
-            backgroundColor: '#EC7FA9',
-            borderRadius: 20,
-            marginTop: 10,
-            flexDirection: 'row',
-            justifyContent: 'space-around',
-            alignItems: 'center',
-            position: 'absolute',
-            top: '92%'
 
-
+        width: 300,
+        height: 53,
+        backgroundColor: '#EC7FA9',
+        borderRadius: 20,
+        marginTop: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        position: 'absolute',
+        top: '92%',
+            
     },
 
     buttonTab: {
-        alignItems: 'center'
+        alignItems: 'center',
+        
     },
 
     textTab: {
