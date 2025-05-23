@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
     },
 
     textInfo: {
-        color: '#A97487',
+        color: 'black',
         fontWeight: 'bold',
         fontSize: 16,
         fontFamily: 'Nunito',
@@ -123,7 +123,7 @@ export const styles = StyleSheet.create({
     },
 
     titleCadastro: {
-        color: '#A97487',
+        color: 'black',
         width: '80%',
         height: 'auto',
         fontSize: 15,

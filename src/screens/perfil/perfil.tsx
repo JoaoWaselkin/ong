@@ -89,28 +89,6 @@ export const Perfil = () => {
 
                         {/* Fim da quebra */}
 
-                        <View style={styles.cardCadastro}>
-                            <View style={styles.imageCadastro}>
-                                <Ionicons name="star-outline" size={24} color="black" />
-                            </View>
-
-                            <View style={styles.cardTexts}>
-                                <Text style={styles.titleCadastro}>
-                                    Curiosidades
-                                </Text>
-
-                                <Text style={styles.textCadastro}>
-                                    Curiosidades do reino animal.
-                                </Text>
-                            </View>
-
-                            <TouchableOpacity style={styles.setaCadastro}>
-                                <AntDesign name="right" size={15} color="black" 
-                                onPress={() => router.navigate('/stacks/curiosidades')}/>
-                            </TouchableOpacity>
-                        </View>
-
-                        
 
                     </View>
 
