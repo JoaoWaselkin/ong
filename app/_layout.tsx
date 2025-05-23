@@ -5,11 +5,11 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
-// Previne o splash de sumir antes de tudo carregar
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -17,7 +17,7 @@ export default function RootLayout() {
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
     Nunito: require('../assets/fonts/Nunito-Regular.ttf'),
-    NunitoBold: require('../assets/fonts/Nunito-Bold.ttf')
+    NunitoBold: require('../assets/fonts/Nunito-Bold.ttf'),
   });
 
   useEffect(() => {
@@ -31,12 +31,14 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={DefaultTheme}>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <ThemeProvider value={DefaultTheme}>
         <Stack screenOptions={{ headerShown: false, animation: 'slide_from_left' }}>
-        <Stack.Screen name="index" />
-        <Stack.Screen name="(stacks)" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+          <Stack.Screen name="index" />
+          <Stack.Screen name="(stacks)" />
+        </Stack>
+        <StatusBar style="auto" />
+      </ThemeProvider>
+    </GestureHandlerRootView>
   );
 }

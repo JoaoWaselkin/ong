@@ -10,7 +10,7 @@ import BackButton from '@/components/backButton/backButton';
 import CustomButton from '@/components/buttonDefault/CustomButton';
 import { Platform, Alert } from 'react-native';
 import { clearAuthStorage } from '@/src/utils/authStorage';
-
+import { API_URL } from '@/src/api/cachorroService';
 
 interface Animal {
   id: string;
@@ -32,7 +32,7 @@ export default function Details() {
   useEffect(() => {
     const fetchAnimal = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:8080/cachorro/buscar/${id}`);
+        const response = await fetch(`${API_URL}${id}`);
         const data = await response.json();
         setAnimal(data);
       } catch (error) {

@@ -23,7 +23,8 @@ scrollContent: {
     paddingHorizontal: 20,
 },
 image: {
-    width: 300,
+    minWidth: 200,
+    width: 370,
     height: 200,
     borderRadius: 10,
     marginVertical: 15,
