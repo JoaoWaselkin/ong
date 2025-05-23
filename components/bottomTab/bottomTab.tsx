@@ -21,9 +21,9 @@ export const BottomTab = () => {
                 <Text style={styles.textTab}>Perfil</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.buttonTab}>
-                <Octicons name="gear" size={24} color="white" />
-                <Text style={styles.textTab}>Config</Text>
+            <TouchableOpacity onPress={() => router.navigate('/stacks/curiosidades')} style={styles.buttonTab}>
+                <Ionicons name="star-outline" size={24} color="white" />
+                <Text style={styles.textTab}>Detalhes</Text>
             </TouchableOpacity>
         </View>
     )
