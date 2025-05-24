@@ -119,7 +119,7 @@ export const Informacoes = () => {
             <View style={{alignItems: 'center',}}>
                 <CustomButton
                     title="Avançar"
-                    onPress={() => router.navigate('/')}
+                    onPress={() => router.navigate('/stacks/home')}
                 />   
             </View>
 

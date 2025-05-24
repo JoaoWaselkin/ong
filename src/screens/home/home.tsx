@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, Image, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { styles } from './style';
 import { router } from 'expo-router';
+import { BottomTab } from '@/components/bottomTab/bottomTab';
 
 const dogs = [
   {
@@ -125,7 +126,8 @@ export const Home = () => {
             </TouchableOpacity>
           </View>
         )}
-      />
+        />
+      <BottomTab/>
     </View>
   );
 };

@@ -6,11 +6,10 @@ import BackButton from '@/components/backButton/backButton';
 import Logo from '@/components/logo/logo';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { BottomTab } from '@/components/bottomTab/bottomTab';
 
 
 
-export const Informacoes = () => {
+export const Sobre = () => {
     
     return (
         <View style={styles.container}>
@@ -80,7 +79,6 @@ export const Informacoes = () => {
 
                     </View>
             </ScrollView>
-            <BottomTab/> 
         </View>
     );
 }

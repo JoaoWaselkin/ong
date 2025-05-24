@@ -95,7 +95,9 @@ export const Perfil = () => {
                     <ButtonExit/>
 
             </View>
-        <BottomTab/>
+            <View style= {{ alignItems: 'center', justifyContent: 'center' }}>
+                <BottomTab/>
+            </View>
         </View>
     )
 }
