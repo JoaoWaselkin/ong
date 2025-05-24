@@ -5,6 +5,7 @@ import { router } from 'expo-router';
 import { listarCachorros } from '../../api/cachorroService';
 import SearchBar from '@/components/searchBar/SearchBar';
 import { BottomTab } from '@/components/bottomTab/bottomTab';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 interface Cachorro {
   id: string;
@@ -56,6 +57,7 @@ export const CachorroScreen = () => {
 
   return (
     <View style={styles.container}>
+      <SafeAreaView/>
       <SearchBar placeholder="Buscar animais..." />
 
       {erro && (

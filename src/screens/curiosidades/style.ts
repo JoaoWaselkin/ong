@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#A97487',
     marginBottom: 25,
+    paddingTop: 55, 
     marginLeft: 'auto',
     marginRight: 'auto',
     textAlign: 'justify',

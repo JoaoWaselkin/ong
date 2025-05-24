@@ -15,6 +15,7 @@ export const TelaInicial = () => {
   return (
       <View style={styles.container}>
           <ScrollView showsHorizontalScrollIndicator={false} style={styles.scrollViewContainer}>
+            <SafeAreaView/>
               <View style={{
                 flex: 1,
                 flexDirection: 'column',
@@ -23,7 +24,6 @@ export const TelaInicial = () => {
                 <BackButton/>
                 <Logo/>
               </View>
-              <SafeAreaView>
                 <View style={styles.section}>
 
                   <Text style={styles.titulo}>Curiosidades do Reino Animal</Text>
@@ -68,9 +68,9 @@ export const TelaInicial = () => {
 
                   </View>
                 </View>
-              </SafeAreaView>
+              {/* </SafeAreaView> */}
           </ScrollView>
-          <View style={{alignItems: 'center', justifyContent: 'center', marginBottom: 8}}>
+          <View style={{alignItems: 'center', justifyContent: 'center', marginBottom: 15}}>
                 <BottomTab/>
           </View>
           
