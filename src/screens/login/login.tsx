@@ -172,7 +172,7 @@ export const Login = () => {
         {/* Renderiza o botão de biometria apenas se não for a plataforma web */}
         {Platform.OS !== 'web' && (
             <CustomButton
-                title="Entrar com a biometria"
+                title="Biometria"
                 onPress={entrarComBiometria}
             />
         )}
