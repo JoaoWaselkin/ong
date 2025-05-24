@@ -10,11 +10,11 @@ import { BottomTab } from '@/components/bottomTab/bottomTab';
 
 
 
-export const Informacoes = () => {
+export const Sobre = () => {
     
     return (
         <View style={styles.container}>
-            <ScrollView style={styles.scrollViewContainer}>
+            <ScrollView showsHorizontalScrollIndicator={false} style={styles.scrollViewContainer}>
 
                 <View style={styles.header}>
                     <BackButton/>

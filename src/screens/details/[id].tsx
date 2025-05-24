@@ -32,7 +32,7 @@ export default function Details() {
   useEffect(() => {
     const fetchAnimal = async () => {
       try {
-        const response = await fetch(`${API_URL}${id}`);
+        const response = await fetch(`${API_URL}/${id}`);
         const data = await response.json();
         setAnimal(data);
       } catch (error) {

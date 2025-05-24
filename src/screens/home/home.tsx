@@ -56,6 +56,7 @@ export const CachorroScreen = () => {
     <View style={styles.container}>
       <SearchBar placeholder="Buscar animais..." />
       <FlatList
+        showsHorizontalScrollIndicator={false}
         ListHeaderComponent={<Text style={styles.title}> Encontre seu melhor amigo de quatro patas! </Text>}
         data={cachorros}
         keyExtractor={(item) => item.id}

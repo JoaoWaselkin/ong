@@ -22,7 +22,7 @@ export const Informacoes = () => {
 
     return (
         <View style={styles.container}>
-            <ScrollView>
+            <ScrollView showsHorizontalScrollIndicator={false}>
                 <BackButton/>
                 <Text style={styles.informacoesTitulo}>Seja um tutor responsável: Seu compromisso com uma vida feliz</Text>
 

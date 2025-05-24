@@ -63,9 +63,9 @@ export const TelaInicial = () => {
                   <View>
                     <CustomButton
                       title="Sobre nós"
-                      onPress={() => router.navigate('/stacks/telaSobre')}
-
+                      onPress={() => router.navigate('/stacks/sobre')}
                     />
+
                   </View>
                 </View>
               </SafeAreaView>
