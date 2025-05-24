@@ -23,6 +23,7 @@ scrollContent: {
     paddingHorizontal: 20,
 },
 image: {
+    resizeMode: 'contain',
     minWidth: 200,
     width: 370,
     height: 200,
