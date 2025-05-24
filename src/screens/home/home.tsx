@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, Image, TouchableOpacity, ActivityIndicator, TouchableHighlight } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { styles } from './style';
 import { router } from 'expo-router';
 import { listarCachorros } from '../../api/cachorroService';
 import SearchBar from '@/components/searchBar/SearchBar';
-import { Ionicons } from '@expo/vector-icons'; 
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import Octicons from '@expo/vector-icons/Octicons';
 import { BottomTab } from '@/components/bottomTab/bottomTab';
-
-// import { TouchableOpacityBase } from 'react-native';
-
 
 interface Cachorro {
   id: string;
@@ -30,6 +23,7 @@ export const CachorroScreen = () => {
   const [pagina, setPagina] = useState(0);
   const [temMais, setTemMais] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
+  const [erro, setErro] = useState<string | null>(null);
 
   async function carregarMaisCachorros() {
     if (isLoading || !temMais) return;
@@ -37,11 +31,20 @@ export const CachorroScreen = () => {
     setIsLoading(true);
     try {
       const resposta = await listarCachorros(pagina);
-      setCachorros(prev => [...prev, ...resposta.content]); // adiciona à lista
-      setTemMais(!resposta.last); // se for a última página, para de carregar
-      setPagina(prev => prev + 1); // próxima página
+
+      if (resposta && Array.isArray(resposta.content)) {
+        setCachorros(prev => [...prev, ...resposta.content]);
+        setTemMais(resposta.last === false); // ou !resposta.last
+        setPagina(prev => prev + 1);
+        setErro(null); // limpa erros anteriores
+      } else {
+        console.warn('Resposta inesperada da API:', resposta);
+        setErro('Resposta inesperada da API. Tente novamente mais tarde.');
+        setTemMais(false); // evita chamadas infinitas
+      }
     } catch (err) {
       console.error('Erro ao carregar cachorros:', err);
+      setErro('Erro ao carregar cachorros. Verifique sua conexão.');
     } finally {
       setIsLoading(false);
     }
@@ -51,14 +54,22 @@ export const CachorroScreen = () => {
     carregarMaisCachorros(); // carrega a primeira página ao montar
   }, []);
 
-
   return (
     <View style={styles.container}>
       <SearchBar placeholder="Buscar animais..." />
+
+      {erro && (
+        <Text style={{ color: 'red', textAlign: 'center', marginBottom: 10 }}>
+          {erro}
+        </Text>
+      )}
+
       <FlatList
         showsHorizontalScrollIndicator={false}
-        ListHeaderComponent={<Text style={styles.title}> Encontre seu melhor amigo de quatro patas! </Text>}
-        data={cachorros}
+        ListHeaderComponent={
+          <Text style={styles.title}> Encontre seu melhor amigo de quatro patas! </Text>
+        }
+        data={Array.isArray(cachorros) ? cachorros : []}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <View style={styles.card}>
@@ -71,21 +82,20 @@ export const CachorroScreen = () => {
               onPress={() =>
                 router.push({
                   pathname: '/stacks/[id]',
-                  params: { ...item },
+                  params: { id: item.id },
                 })
               }
             >
               <Text style={styles.saibaMais}>Saiba Mais</Text>
             </TouchableOpacity>
           </View>
-
         )}
         onEndReached={carregarMaisCachorros}
         onEndReachedThreshold={0.5}
         ListFooterComponent={isLoading ? <ActivityIndicator size="small" /> : null}
       />
 
-      <BottomTab/>
+      <BottomTab />
     </View>
   );
 };
