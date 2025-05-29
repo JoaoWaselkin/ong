@@ -61,23 +61,23 @@ O repositório está organizado em 5 branches principais. As duas mais important
 - Expo Go (no celular ou emulador)
 - Git
 
-### Passos
+### Passos em ordem
 
-# 1. Clone o repositório
+### 1. Clone o repositório
 ```
 git clone https://github.com/JoaoWaselkin/ong.git
 ```
-# 2. Escolha a branch desejada
+### 2. Escolha a branch desejada
 ```
 git checkout develop-mockado
 ```
 
-# 3. Instale as dependências
+### 3. Instale as dependências
 ```
 npm install
 ```
 
-# 4. Inicie o app
+### 4. Inicie o app
 ```
 npx expo start
 ```
