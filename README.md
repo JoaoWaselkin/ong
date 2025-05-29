@@ -3,7 +3,7 @@
 Um aplicativo móvel desenvolvido especialmente para atender às principais necessidades de ONGs voltadas à adoção de cães. O grande diferencial do projeto é a integração de **leitura biométrica**, que moderniza e agiliza o acesso ao sistema. 📱
 
 
-##  Visão Geral
+##  🚀 Visão Geral
 
 Este projeto tem como objetivo oferecer uma solução digital completa e intuitiva para facilitar o gerenciamento de adoções de cães em organizações sem fins lucrativos. Com foco na experiência do usuário e na eficiência do processo, o app permite:
 
@@ -14,7 +14,7 @@ Este projeto tem como objetivo oferecer uma solução digital completa e intuiti
 
 ---
 
-##  Tecnologias Utilizadas
+##  🛠️ Tecnologias Utilizadas
 
 ###  Frontend (Mobile)
 
@@ -42,7 +42,7 @@ Este projeto tem como objetivo oferecer uma solução digital completa e intuiti
 
 ---
 
-## Branches do Projeto
+## 🌿 Branches do Projeto
 
 O repositório está organizado em 5 branches principais. As duas mais importantes são:
 
