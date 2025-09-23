@@ -10,7 +10,7 @@ Este projeto tem como objetivo oferecer uma solução digital completa e intuiti
 - Cadastro e visualização de animais disponíveis para adoção
 - Gerenciamento de informações de adotantes
 - Cadastro completo do adotante para processos de adoção
-- Login com **autenticação biométrica**, garantindo mais praticidade e segurança
+- Login com **autenticação biométrica**, garantindo mais praticidade e segurança.
 
 ---
 
